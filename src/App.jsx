@@ -1,8 +1,8 @@
 // src/App.jsx
-import React from 'react';
-import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
-import ContentSections from './components/ContentSections';
+import React from "react";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import ContentSections from "./components/ContentSections";
 
 function App() {
   return (
