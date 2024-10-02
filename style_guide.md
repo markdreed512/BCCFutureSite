@@ -29,3 +29,6 @@
 - Global styles
     - any styles that would apply site-wide should go in App.css
     - site-wide values such as fonts, colors, etc... should be in [css variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) declared on `:root` in App.css as well
+
+- Commits
+    - commit messages should be descriptive of work done, and begin with a present-tense verb. Ex: "Increase title font size" or "Create BlogPost component"
