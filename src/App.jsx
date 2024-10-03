@@ -1,15 +1,14 @@
 // src/App.jsx
 import React from "react";
 import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import ContentSections from "./components/ContentSections";
+import HomeView from "./components/HomeView/HomeView";
+import './App.css'
 
 function App() {
   return (
     <div>
       <Navbar />
-      <HeroSection />
-      <ContentSections />
+      <HomeView />
     </div>
   );
 }
