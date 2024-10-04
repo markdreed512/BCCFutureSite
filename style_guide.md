@@ -11,11 +11,11 @@
 
 ## Components
 - Create components in their own folder inside the src>components folder. Each component folder should include the .jsx and .css files associated with that component
+- Naming convention should be UpperCamelCase for component folders, .jsx and .css files. For example, in the `HomeView` folder you would find `HomeView.jsx` and `HomeView.css`
 
 ## CSS 
-- CSS Modules
-    - CSS files for individual components should be included in that component's folder with the naming convention `ComponentName.module.css` and imported into each component 
-    - [Using CSS Modules in React](https://medium.com/@ralph1786/using-css-modules-in-react-app-c2079eadbb87)
+- Separate CSS files
+    - CSS files for individual components should be included in that component's folder with the naming convention `ComponentName.css` and imported into each component 
 - BEM
     - Please follow the BEM methodology for element classes
     - https://youtu.be/YktyUS1Aeo0?si=pPl-7sPxfNZNeg4H
