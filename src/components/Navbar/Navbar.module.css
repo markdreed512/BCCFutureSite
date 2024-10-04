@@ -1,0 +1,14 @@
+.navbar {
+  background: #f4f2f5;
+  display: flex;
+}
+
+.navbar__menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar__icon {
+  display: inline-block;
+  /* may remove */
+}

@@ -1,19 +1,23 @@
-// src/components/Navbar.jsx
+// src/components/Navbar/Navbar.jsx
 import React from "react";
-import "./Navbar.module.css";
+import "../BasicMenu/BasicMenu";
+import BasicMenu from "../BasicMenu/BasicMenu";
+import { navbar, navbar__menu, navbar__icon } from "./Navbar.module.css";
 
 function Navbar() {
   return (
-    <nav style={{ background: "#240D57", padding: "1rem" }}>
-      <ul
-        style={{
-          listStyleType: "none",
-          display: "flex",
-          justifyContent: "space-around",
-          color: "white",
-        }}
-      >
-        <li>Event</li>
+    <nav className={navbar}>
+      <img src="" alt="" className={navbar__icon} />
+      <ul className={navbar__menu}>
+        <li className="navbar__menu-item">
+          <BasicMenu
+            buttonTitle="Events"
+            menuItems={[
+              { name: "Type of Events", id: "type" },
+              { name: "Event Calendar", id: "calendar" },
+            ]}
+          />
+        </li>
         <li>About Us</li>
         <li>Blog</li>
         <li>Sponsor</li>
