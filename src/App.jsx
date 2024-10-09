@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 import HomeView from './components/HomeView/HomeView'
 import './App.css'
 
+
 function App() {
 	return (
 		<Router>
