@@ -1,28 +1,16 @@
-// import Carousel from './components/Carousel'
-// import Welcome from './components/Welcome'
-// import BlogSection from './components/BlogSection'
-// import Sponsors from './components/Sponsor'
-
+import Sponsors from '../sponsors/Sponsors'
+import './HomeView.css'
 function HomeView() {
     return ( 
 
         <main id="home_view">
             <section className="intro-section">
-                <h1>Baltimore's best in-person tech meetup</h1>
+                <h1>Baltimore's best in&#x2011;person tech meetup</h1>
                 <p>An inclusive, informal, co-working meetup for people of all skill levels. Bring a laptop and ideas, we'll bring coffee!</p>
             </section>
-            {/* <section className="carousel-section">
-                <Carousel />
-            </section> */}
-            {/* <section className="welcome-section">
-                <Welcome />
-            </section> */}
-            {/* <section className="blog-section">
-                <BlogsSection />
-            </section> */}
-            {/* <section className="sponsor-section">
+            <section className="sponsor-section">
                 <Sponsors />
-            </section> */}
+            </section> 
         </main>
 
      );
