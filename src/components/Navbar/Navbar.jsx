@@ -1,5 +1,5 @@
 // src/components/Navbar.jsx
-import "./Navbar.module.css";
+import "./Navbar.css";
 
 function Navbar() {
   return (
