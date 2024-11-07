@@ -1,0 +1,59 @@
+{
+  "event_name": "JavaScript for Beginners",
+  "date": "2024-11-15",
+  "time": "18:00",
+  "duration": "2 hours",
+  "img": "https://images.unsplash.com/photo-1648740366598-7fb7c5e73fa5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "location": {
+    "name": "TechHub Downtown",
+    "address": "123 Innovation Way, City, State, ZIP",
+    "latitude": 40.712776,
+    "longitude": -74.005974
+  },
+  "organizer": {
+    "name": "Code Enthusiasts Meetup Group",
+    "profile_url": "https://www.meetup.com/code-enthusiasts/"
+  },
+  "attendees_count": 50,
+  "description": "Come join us for our second Equitech Tuesday event with Upsurge at Reveille Grounds. Other members of Baltimores tech scene will be there like The Maryland Technology Internship Program, Johns Hopkins Carey Business School & Bmore Collab.\n\nWe'll have empanadas and other refreshments, See you there!\n\nHOW TO FIND US/ PARKING:\n\nStreet parking is free, plentiful, and unrestricted on Severn, Bush, and Bayard Streets, especially after 3:30pm and on weekends:\nThe code for the walk-in gate to the Courtyard is 0250#\n\nOnce through the gate, Building C is the first building on your left, and Reveille is on the 2nd Floor. To get there, you can either:\n- Proceed ahead and take the external stairs on your left OR\n- Use the wooden doors on your left to access the elevator (if locked, the code is also 0250#)\n\nGated parking is available on Bush Street & unrestricted on weekends:\nIf using your GPS, we recommend using 1799 Bush Street.\nThe black drive-in gate is on your left, and the code is 05230.\nProceed to the right, past the first set of spots on your left, and park in the spaces closest to the courtyard (past the first building on your left).\n\nSee the venue website (https://www.reveillegrounds.com/location) for more information.",
+  "tags": ["JavaScript", "Coding", "Beginner", "Tech"],
+  "event_url": "https://www.meetup.com/code-enthusiasts/events/123456789/",
+  "fee": {
+    "amount": 10,
+    "currency": "USD"
+  },
+  "rsvp_status": {
+    "total_rsvps": 40,
+    "waitlist": 5
+  },
+  "attendees": [
+    {
+      "id": "user_1",
+      "name": "John Doe",
+      "profile_picture": "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D",
+      "bio": "Software engineer and outdoor enthusiast.",
+      "status": "Going"
+    },
+    {
+      "id": "user_2",
+      "name": "Jane Smith",
+      "profile_picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D",
+      "bio": "Loves networking and great coffee.",
+      "status": "Interested"
+    },
+    {
+      "id": "user_3",
+      "name": "Some Name",
+      "profile_picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D",
+      "bio": "Software engineer and outdoor enthusiast.",
+      "status": "Going"
+    },
+    {
+      "id": "user_4",
+      "name": "Some Name 2",
+      "profile_picture": "https://plus.unsplash.com/premium_photo-1683121771856-3c3964975777?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D",
+      "bio": "Software engineer and outdoor enthusiast.",
+      "status": "Going"
+    }
+  ]
+}
