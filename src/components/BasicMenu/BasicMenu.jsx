@@ -46,7 +46,7 @@ export default function BasicMenu({
       >
         {menuItems.map((item) => {
           return (
-            <MenuItem onClick={handleClose} key={item.id}>
+            <MenuItem onClick={item.handleClick} key={item.id}>
               {item.name}
             </MenuItem>
           );
