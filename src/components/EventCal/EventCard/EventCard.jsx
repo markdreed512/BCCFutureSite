@@ -1,6 +1,7 @@
 import "./EventCard.css";
 import FormattedDescription from "../FormattedDescription/FormattedDescription";
 import React from "react";
+import { AvatarGroup, Avatar } from "@mui/material";
 
 export default function EventCard({
   date,
@@ -45,20 +46,14 @@ export default function EventCard({
         </div>
         <div className="event-card__bottom">
           <div className="event-card__attendees">
-            {attendees.map((attendee) => {
-              const { status, name, profile_picture, id } = attendee;
+            <AvatarGroup max={5}>
+              {attendees.map((attendee) => {
+                const { status, name, profile_picture, id } = attendee;
 
-              if (status == "Going")
-                return (
-                  <React.Fragment key={id}>
-                    <img
-                      src={profile_picture}
-                      alt={name}
-                      className="event-card__pfp"
-                    />
-                  </React.Fragment>
-                );
-            })}
+                if (status == "Going")
+                  return <Avatar key={id} alt={name} src={profile_picture} />;
+              })}
+            </AvatarGroup>
           </div>
         </div>
       </div>
