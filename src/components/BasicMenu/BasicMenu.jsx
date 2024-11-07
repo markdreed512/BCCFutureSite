@@ -6,12 +6,19 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 // menuItems is an array of the menuItems.
 // each menuItem is an object with name and id properties
-export default function BasicMenu({ buttonTitle, menuItems }) {
+export default function BasicMenu({
+  buttonId,
+  menuId,
+  buttonTitle,
+  menuItems,
+}) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
+
   const handleClose = () => {
     setAnchorEl(null);
   };
@@ -19,8 +26,8 @@ export default function BasicMenu({ buttonTitle, menuItems }) {
   return (
     <div>
       <Button
-        id="basic-button"
-        aria-controls={open ? "basic-menu" : undefined}
+        id={buttonId}
+        aria-controls={open ? { menuId } : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
@@ -29,7 +36,7 @@ export default function BasicMenu({ buttonTitle, menuItems }) {
         {buttonTitle}
       </Button>
       <Menu
-        id="basic-menu"
+        id={menuId}
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
