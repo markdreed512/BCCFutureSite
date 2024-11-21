@@ -1,16 +1,38 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import supabase from '../../config/supabaseClient'
 import { uid } from 'uid'
 import SponsorCard from '../SponsorCard/SponsorCard'
-import SponsorData from './SponsorData'
+// import SponsorData from './SponsorData'
 import './Sponsors.css'
 
 function Sponsors() {
+    const [ fetchError, setFetchError ] = useState(null)
+    const [ sponsors, setSponsors ] = useState([])
+
+    useEffect(() => {
+        const fetchSponsors = async () => {
+            const { data, error } = await supabase
+                .from('sponsors')
+                .select()
+            console.log("data:", data)
+            if(error){
+                setFetchError("Could not fetch sponsors")
+                setSponsors(null)
+                console.error(error)
+            }
+            if(data){
+                setSponsors(data)
+                setFetchError(null)
+            }
+        }
+        fetchSponsors()
+    },[])
     return ( 
         <div className="sponsors">
             <h2>Sponsors</h2>
             <p className="sponsors__description">Partner with Us to Grow Your Brand and Support the Tech Community</p>
             <div className="sponsors__tiles">
-                {SponsorData.map(sponsor => {
+                {sponsors.map(sponsor => {
                     return (
                         <SponsorCard sponsor={sponsor} key={uid()}/>
                     )
