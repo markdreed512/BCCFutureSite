@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import supabase from '../../config/supabaseClient'
 import { uid } from 'uid'
 import SponsorCard from '../SponsorCard/SponsorCard'
-// import SponsorData from './SponsorData'
 import './Sponsors.css'
 
 function Sponsors() {
