@@ -1,4 +1,5 @@
 import Sponsors from "../sponsors/Sponsors";
+import Carousel from "../Carousel/Carousel";
 import "./HomeView.css";
 function HomeView() {
   return (
@@ -9,6 +10,9 @@ function HomeView() {
           An inclusive, informal, co-working meetup for people of all skill
           levels. Bring a laptop and ideas, we'll bring coffee!
         </p>
+      </section>
+      <section className="carousel-section">
+        <Carousel />
       </section>
       <section className="sponsor-section">
         <Sponsors />
