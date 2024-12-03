@@ -26,4 +26,5 @@ const SponsorData = [
     }
 ]
 
-export default SponsorDat
+export default SponsorData
+
