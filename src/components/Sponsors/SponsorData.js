@@ -8,13 +8,13 @@ const SponsorData = [
     }, {
         name: "Digital Harbor Foundation",
         type: "Venue Sponsor",
-        description: "Ensures digital equity is for everyone",
+        description: "Ensures digital equity is for everyone.",
         logo: 'https://digitalharbor.org/wp-content/uploads/2022/12/DHF-icon-4023-300x300.png',
         id: 'dhf_card'
     },{
         name: "Spark",
         type: "Venue Sponsor",
-        description: "Spark is Baltimore’s most collaborative coworking space",
+        description: "Spark is Baltimore’s most collaborative coworking space.",
         logo: 'https://sparkcoworking.com/baltimore/wp-content/uploads/sites/6/2018/05/spark-baltimore-logo.png',
         id: 'spark_card'
     },{
