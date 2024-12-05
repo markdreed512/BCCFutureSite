@@ -4,9 +4,9 @@ import lightning_talk from '../../assets/carouselImages/lightning_talk.jpg'
 import demo_day from '../../assets/carouselImages/demo_day.jpg'
 import symposium from '../../assets/carouselImages/symposium.jpg'
 
-const about_route = '/about-us'
+const about_route = '/event-types'//Find more info on the event types page
 //@todo : each event route should have a filter that shows events of that type only
-const event_route = '/event-types'
+const event_route = '/event-calendar'
 
 const Slides = [
     {"image": regular_meeting, "title": "Regular Meetings", "about_route": about_route, "event_route":event_route }, 
