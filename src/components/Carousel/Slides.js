@@ -4,12 +4,16 @@ import lightning_talk from '../../assets/carouselImages/lightning_talk.jpg'
 import demo_day from '../../assets/carouselImages/demo_day.jpg'
 import symposium from '../../assets/carouselImages/symposium.jpg'
 
+const about_route = '/about-us'
+//@todo : each event route should have a filter that shows events of that type only
+const event_route = '/event-types'
+
 const Slides = [
-    {"image": regular_meeting, "title": "Regular Meetings", "route": '#'}, 
-    {"image": demo_day, "title": "Demo Days", "route": '#'},
-    {"image": workshop, "title": "Workshops", "route": '#'},
-    {"image": lightning_talk, "title": "Lightning Talks", "route": '#'},
-    {"image": symposium, "title": "Symposiums", "route": '#'}
+    {"image": regular_meeting, "title": "Regular Meetings", "about_route": about_route, "event_route":event_route }, 
+    {"image": demo_day, "title": "Demo Days",  about_route, "event_route":event_route},
+    {"image": workshop, "title": "Workshops",  about_route, "event_route":event_route},
+    {"image": lightning_talk, "title": "Lightning Talks",  about_route, "event_route":event_route},
+    {"image": symposium, "title": "Symposiums",  about_route, "event_route":event_route}
     
 ]
 
