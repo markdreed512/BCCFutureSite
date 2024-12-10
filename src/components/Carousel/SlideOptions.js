@@ -1,12 +1,19 @@
-const Options = {
+
+const Options = { 
     type: 'loop', 
+    autoScroll: { 
+    
+    pauseOnFocus: false, // For continous sliding
     perPage: 3, 
     perMove: 1, 
-    focus: 0, 
-    height: 350, 
+    rewind: true, // Rewind to start when the end is reached 
+    focus: 1, 
+    speed: 1 },
+    
     gap: 25, 
-    autoplay: "true", 
-    speed: 1100, 
+    height: 350, 
+    fixedWidth: 550,
+
     breakpoints: {
         960: {
             perPage: 2,
@@ -14,7 +21,10 @@ const Options = {
         640: {
             perPage: 1,
         },
+    
     }
 }
 
 export default Options
+
+
