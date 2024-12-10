@@ -1,6 +1,7 @@
 import Sponsors from '../sponsors/Sponsors'
 import Carousel from '../Carousel/Carousel';
 import './HomeView.css'
+import AboutUsCard from '../AboutUs/AboutUsCard';
 function HomeView() {
     return ( 
 
@@ -11,6 +12,9 @@ function HomeView() {
             </section>
             <section className="carousel-section">
                 <Carousel />
+            </section>
+            <section className="about-us">
+                <AboutUsCard />
             </section>
             <section className="sponsor-section">
                 <Sponsors />
