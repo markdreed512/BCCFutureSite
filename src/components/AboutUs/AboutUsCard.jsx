@@ -11,7 +11,9 @@ const AboutUsCard = () => {
                 <h1>Welcome to Code & Coffee</h1>
             </div>
             <div className="about-us__text-content">
-                <p>Get involved with Code & Coffee! Sponsor an event to promote your business, volunteer at regular events, or join as a panelist in one of our symposioms. You can also lead a tech workshop, give a Lightning Talk, contribute as a web developer on GitHub, or present your project at one of our Demo Days. There are many ways to participate and make an impact!</p>
+                <p>Code & Coffee is a place where people with passion for tech can come together, exchange ideas, & learn from one another. It’s a place that encourages cross-pollination between
+                    technologists of varied backgrounds leaving them with new ideas & doubled energy to be poured back into the community
+             </p>
             </div>
             <div className="about-us__text-btn">
                 <button className = "about-us__btn">
