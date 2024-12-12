@@ -1,0 +1,130 @@
+/* Root styling */
+.EventTypeCard {
+    position: relative;
+    width: 80%; /* Define the card as 80% of the page width */
+    max-width: 1200px;
+    height: 600px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+/* Hover effects for card */
+/* .EventTypeCard:hover {
+    transform: scale(1.03);
+    box-shadow: (0,8px 16px rgba(0, 0, 0, 0.3));
+} */
+
+/* Content container */
+.EventTypeCard__container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Makes the content cover the entire height of the element */
+    display: flex;
+    flex-direction: column; /* Allow stacking of elements */
+    justify-content: space-between;
+    padding: 20px;
+    color: var(--primary-white);
+    box-sizing: border-box; /* This ensures that the element stays within the parent container */
+    background: rgba(0, 0, 0, 0.7); /* This is to make it easier to read the text overlay */
+    transform: translateY(80%); /* Start mostly hidden */
+    transition: transform 0.3s ease-in-out;
+}
+
+.EventTypeCard:hover .EventTypeCard__container {
+    transform: translateY(0); /* Slide up on hover */
+}
+
+/* .EventTypeCard__text {
+    flex-grow: 1;
+    overflow: hidden;
+} */
+
+/* Title styling */
+.EventTypeCard__title {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-family: var(--tertiary-font);
+    font-size: 32px;
+    font-weight: 200;
+    margin-bottom: 60px;
+}
+
+.EventTypeCard__description {
+    font-family: var(--secondary-font);
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Button styling */
+.EventTypeCard__btn {
+    align-self: flex-start;
+    /* margin-left: auto;
+    margin-right: 10px; */
+    background-color: var(--primary-white);
+    color: #4a2c8a;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effects */
+.EventTypeCard__btn:hover {
+    background-color: #4a2c8a;
+    color: white;
+}
+
+
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+    .EventTypeCard {
+        width: 95%;
+        margin: 20px;
+    }
+
+    .EventTypeCard__container {
+        transform: translateY(75%); 
+    }
+
+    .EventTypeCard:hover .EventTypeCard__container {
+        transform: translateY(0);
+    }
+
+    .EventTypeCard__title {
+        margin-bottom: 25px;
+        font-size: 24px;
+    }
+
+    .EventTypeCard__description {
+        font-size: 14px;
+        height: auto;
+        overflow: auto;
+        scroll-behavior: smooth;
+    }
+}
+
+/* Tablet Styling */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .EventTypeCard {
+        width: 85%;
+        height: auto;
+    }
+}
