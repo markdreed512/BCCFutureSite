@@ -12,7 +12,7 @@ const EventTypeData = [
         id: "lightning-talk-card"
     },
     {
-        name: "Symposium",
+        name: "Symposiums",
         description: "Our symposium panel is a conversation among four experts from various fields and backgrounds around a central topic. The panel is split into two groups, one in favor of the topic of interest, the other against . To start the discussion, each panelist will give a 3 minute max opener making a case for the opposing side. After this we have 2 30-40 minute rounds of discussion, with a 15 minute intermission & time for questions during the second round.",
         img: symposium,
         id: "symposium-card"
