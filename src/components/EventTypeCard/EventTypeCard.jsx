@@ -12,7 +12,9 @@ const EventTypeCard = ({eventType}) => {
                     <h3 className="EventTypeCard__title">{eventType.name}</h3>
                     <p className="EventTypeCard__description">{eventType.description}</p>
                 </div>
-                <button className="EventTypeCard__btn">Sign up to talk</button>
+                <div className="EventTypeCard__btn-container">
+                    <button className="EventTypeCard__btn">Sign up to talk</button>
+                </div>
             </div>
         </div>
     )
