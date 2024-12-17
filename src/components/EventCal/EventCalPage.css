@@ -1,0 +1,21 @@
+.event-cal-pg {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-cal-pg__title {
+  margin-bottom: 47px;
+}
+
+.event-cal-pg__divider {
+  flex-grow: 1;
+  height: 1px;
+  opacity: 15%;
+  background-color: #fff;
+  margin-bottom: 100px;
+}
+
+.MuiStack-root > .event-cal-pg__pagination {
+  margin: 100px auto 0;
+}

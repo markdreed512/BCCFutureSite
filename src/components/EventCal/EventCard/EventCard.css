@@ -40,12 +40,23 @@
   font-weight: 400;
 }
 
+.event-card__description-span {
+  display: inline-block;
+}
+
 .event-card__img {
   width: 100%;
-  max-height: 125px;
+  max-height: 158px;
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
+  box-shadow: 0px 10px 15px -3px #0000001a;
+}
+
+.event-card__attendees {
+  color: #707070;
+  font-family: var(--secondary-font);
+  font-size: 16px;
 }
 
 /* .event-card__pfp {

@@ -2,13 +2,12 @@
 
 import React from "react";
 
-export default function FormattedDescription({ text, className }) {
+export default function FormattedDescription({ text, textClassName }) {
   const formattedText = text.split("\n").map((line, index) => (
     <React.Fragment key={index}>
-      <span>{line.trim()}</span>
-      <br />
+      <span className={`${textClassName}-span`}>{line.trim()}</span>
     </React.Fragment>
   ));
 
-  return <p className={className}>{formattedText}</p>;
+  return <p className={textClassName}>{formattedText}</p>;
 }
