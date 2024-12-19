@@ -5,7 +5,7 @@ import PaginationControlled from "../PaginationControlled/PaginationControlled";
 
 export default function EventCalPage() {
   const [pageCount, setPageCount] = useState(0);
-  const [pageView, setPageView] = useState("upcoming");
+  const [pageView, setPageView] = useState("past");
   const [page, setPage] = useState(1);
 
   const handlePageChange = (event, value) => {

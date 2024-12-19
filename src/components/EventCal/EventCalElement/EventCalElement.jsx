@@ -34,7 +34,6 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex }) {
 
           setFetchError(null);
           setEventsData(sortedData);
-          setPageCount(Math.ceil(data.length / 6));
         }
       }
     };
@@ -85,6 +84,12 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex }) {
 
     organizeEvents();
   }, [eventsData]);
+
+  useEffect(() => {
+    if (pageView && displayEventsData) {
+      setPageCount(Math.ceil(displayEventsData[pageView].length || 0));
+    }
+  }, [displayEventsData, pageView]);
 
   return (
     <section className="event-cal">
