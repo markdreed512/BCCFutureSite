@@ -1,7 +1,7 @@
 /* Root styling */
 .EventTypeCard {
     position: relative;
-    width: 80%; /* Define the card as 80% of the page width */
+    width: 80%;
     max-width: 1200px;
     height: 600px;
     border-radius: 5px;
@@ -22,7 +22,6 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
-    /* z-index: 1; */
     pointer-events: none;
     opacity: 1;
     transition: opacity 0.8s ease;
@@ -38,71 +37,76 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 65%; /* Makes the content cover the entire height of the element */
-    display: flex;
-    flex-direction: column; /* Allow stacking of elements */
-    justify-content: space-between;
-    padding: 20px;
-    color: var(--primary-white);
-    box-sizing: border-box; /* This ensures that the element stays within the parent container */
-    transition: transform 0.8s ease-in-out;
-}
-
-.EventTypeCard__container:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgb(120, 97, 221, 0.6), rgba(56, 28, 134, 0.8)); 
-}
-
-.EventTypeCard:hover .EventTypeCard__text {
-    transform: translateY(0); /* Slide up on hover */
-}
-
-.EventTypeCard__text {
-    flex: 1;
-    overflow: hidden;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-    width: 75%;
-    /* transform: translateY(100%); */
-    transition: transform 0.8s ease;
-    transform: translateY(85%); /* Start mostly hidden */
+    justify-content: flex-end; /* Align items to the bottom initially */
+    padding: 20px;
+    color: var(--primary-white);
+    box-sizing: border-box;
+}
+
+/* Title container */
+.EventTypeCard__title-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    transition: transform 0.8s ease-in-out;
+    z-index: 2;
 }
 
 /* Title styling */
 .EventTypeCard__title {
-    height: 20%;
-    display: flex;
-    align-items: center;
-    padding: 20px;
     font-family: var(--tertiary-font);
     font-size: 44px;
     font-weight: 200;
-    margin-bottom: 20px;
+    transition: transform 0.8s ease-in-out;
 }
 
+/* Description styling */
 .EventTypeCard__description {
-    font-family: var(--secondary-font);
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 68%;
+    height: auto;
+    font-family: var(--tertiary-font);
     font-size: 16px;
     line-height: 1.5;
+    color: var(--primary-white);
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: flex-start; */
+    padding: 20px;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.8s ease-in-out;
+}
+
+/* Hover effects to reveal description */
+.EventTypeCard:hover .EventTypeCard__description {
+    opacity: 1;
+}
+
+/* Hover effect to slide */
+.EventTypeCard:hover .EventTypeCard__title {
+    transform: translateY(-180px); /* Slide title up halfway */
 }
 
 /* Button styling */
 .EventTypeCard__btn-container {
-    flex-shrink: 0;
-    padding: 10px;
-    text-align: right;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    z-index: 2;
 }
 
 .EventTypeCard__btn {
-    align-self: flex-start;
-    /* margin-left: auto;
-    margin-right: 10px; */
     background-color: var(--primary-white);
     color: #4a2c8a;
     border: none;
@@ -113,10 +117,18 @@
     transition: background-color 0.8s ease;
 }
 
-/* Button hover effects */
 .EventTypeCard__btn:hover {
-    background-color: #4a2c8a;
-    color: white;
+    /* background-color: #4a2c8a;
+    color: var(--primary-white); */
+}
+
+.EventTypeCard__container:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(78, 0, 110, 1));
+}
+
+a:link, a:visited {
+    color: #4a2c8a;
+    text-decoration: none;
 }
 
 
@@ -124,99 +136,137 @@
 /* Mobile Styling */
 @media (max-width: 768px) {
     .EventTypeCard {
-        height: 400px;
-        width: 100%;
+        width: 90%;
+        height: 500px;
+        transition: none;
+        background-size: 60%;
+        background-position-x: 120%;
+        background-position-y: 0;
+        background-repeat: no-repeat;
     }
 
     .EventTypeCard__container {
-        position: relative;
-        height: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgb(120, 97, 221, 0.5), rgba(56, 28, 134, 0.8)); 
-        padding: 10px;
-        transition: none;
-        padding-bottom: 10px;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(78, 0, 110, 1));
     }
 
-    .EventTypeCard__text {
-        transform: none;
+    .EventTypeCard__title-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 15%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 10px 0;
-        width: 99%;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px 20px;
+        transition: none;
     }
 
     .EventTypeCard__title {
-        flex: 0 0 15%;
         font-size: 24px;
-        padding: 10px;
+        transition: none;
+    }
+
+    .EventTypeCard:hover .EventTypeCard__title {
+        transform: translateY(0); /* Eliminate the slide */
     }
 
     .EventTypeCard__description {
-        flex: 0 0 80%;
-        font-size: 12px;
+        opacity: 1;
+        position: absolute;
+        top: 15%;
+        width: 95%;
+        height: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
         padding: 10px;
-        margin-top: 0;
+        transition: none;
     }
 
     .EventTypeCard__btn-container {
-        flex: 0 0 5%;
-        text-align: right;
-        margin-top: 10px;
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        width: auto;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        transition: none;
     }
 
     .EventTypeCard__btn {
-        font-size: 10px;
-        padding: 8px 12px;
+        font-size: 14px;
+        padding: 8px 20px;
+        transition: none;
     }
 }
 
 /* Tablet Styling */
 @media (min-width: 769px) and (max-width: 1030px) {
     .EventTypeCard {
-        height: 400px;
-        width: 100%;
+        width: 90%;
+        height: 500px;
+        transition: none;
     }
 
     .EventTypeCard__container {
-        position: relative;
-        height: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgb(120, 97, 221, 0.5), rgba(56, 28, 134, 0.8)); 
-        padding: 10px;
-        transition: none;
-        padding-bottom: 10px;
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(78, 0, 110, 1));
     }
 
-    .EventTypeCard__text {
-        transform: none;
+    .EventTypeCard__title-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 15%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 10px 0;
-        width: 99%;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px 20px;
+        transition: none;
     }
 
     .EventTypeCard__title {
-        flex: 0 0 15%;
-        font-size: 28px;
-        padding: 10px;
+        font-size: 32px;
+        transition: none;
+    }
+
+    .EventTypeCard:hover .EventTypeCard__title {
+        transform: translateY(0); /* Eliminate the slide */
     }
 
     .EventTypeCard__description {
-        flex: 0 0 80%;
-        font-size: 16px;
+        opacity: 1;
+        position: absolute;
+        top: 15%;
+        width: 75%;
+        height: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
         padding: 10px;
-        margin-top: 0;
+        transition: none;
     }
 
     .EventTypeCard__btn-container {
-        flex: 0 0 5%;
-        text-align: right;
-        margin-top: 10px;
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        width: auto;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        transition: none;
     }
 
     .EventTypeCard__btn {
-        font-size: 14px;
-        padding: 8px 12px;
+        font-size: 18px;
+        padding: 8px 20px;
+        transition: none;
     }
 }
