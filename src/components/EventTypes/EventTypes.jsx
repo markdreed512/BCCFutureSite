@@ -6,7 +6,7 @@ export default function EventTypes() {
   return(
     <div className="event-types__container">
       <div className="event-types__header">
-        <h1>Explore Our Diverse Range of Engaging Events</h1>
+        <h1>Explore Our Diverse Range of Events</h1>
       </div>
       <div className="event-types__cards">
         {EventTypeData.map((eventType) => {
