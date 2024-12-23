@@ -1,7 +1,8 @@
 // src/components/Navbar/Navbar.jsx
 import "../DropdownMenu/DropdownMenu";
 import DropdownMenu from "../DropdownMenu/DropdownMenu";
-import logo from "../../assets/BCC_logo.png";
+//import logo from "../../assets/BCC_logo.png";
+import logo from "../../assets/bcc-nav.png";
 import HamburgerMenuIcon from "@mui/icons-material/Menu";
 import EventCalIcon from "../../assets/event_cal_icon.svg";
 import EventTypeIcon from "../../assets/event_type_icon.svg";

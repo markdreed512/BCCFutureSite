@@ -1,15 +1,22 @@
 .navbar {
   background: #f4f2f5;
   display: flex;
+  position: sticky;
+  z-index:5;
+  top: 0px;
   justify-content: space-between;
   align-items: center;
-  height: 68px;
+  height: 85px;
 }
 
+
+
 .navbar__icon {
-  display: inline-block;
-  width: 120px;
-  height: 50px;
+  display: flex;
+  align-items: center;
+  width: 235px;
+  height: 85px;
+  padding: 0px;
   cursor: pointer;
   margin-left: 33px;
 }
