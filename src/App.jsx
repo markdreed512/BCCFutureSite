@@ -8,20 +8,29 @@ import EventCal from "./components/EventCal/EventCal";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Blog from "./components/Blog/Blog";
 import Volunteer from "./components/Volunteer/Volunteer";
+import backgroundImg from '../src/assets/backgroundImg.png'
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<HomeView />} />
-        <Route path="/event-types" element={<EventTypes />} />
-        <Route path="/event-calendar" element={<EventCal />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/volunteer" element={<Volunteer />} />
-      </Routes>
-    </Router>
+    <>
+      <img 
+        src={backgroundImg}
+        alt="logo" 
+        className="background-img" 
+      />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomeView />} />
+          <Route path="/event-types" element={<EventTypes />} />
+          <Route path="/event-calendar" element={<EventCal />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/volunteer" element={<Volunteer />} />
+        </Routes>
+      </Router>
+    </>
+    
   );
 }
 
