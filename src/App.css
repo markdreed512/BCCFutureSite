@@ -22,7 +22,22 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: scroll;
 }
+
+.background-img {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 22vw;
+  height: auto;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -1;
+  background-position-x: 175%;
+  background-position-y: -75%;
+}
+
 main {
   max-width: 1262px;
   margin: 0 auto;
