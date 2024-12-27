@@ -18,20 +18,24 @@ body {
   margin: 0;
   /* background-color: var(--primary-purple); */
   height: 100vh;
-  background: linear-gradient(to top right, #1f0834 45%, #4e006e 100%);
+  background:radial-gradient(farthest-side, #4d046b 10%,#1f0834 110%);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
+ 
+  background-position: 50% 100%;
+
   overflow-y: scroll;
 }
 
 .background-img {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 1;
   right: 0;
   width: 22vw;
+  margin-right: 30px;
   height: auto;
-  opacity: 0.1;
+  opacity: 0.05;
   pointer-events: none;
   z-index: -1;
   background-position-x: 175%;
