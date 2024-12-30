@@ -8,16 +8,10 @@ import EventCal from "./components/EventCal/EventCal";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Blog from "./components/Blog/Blog";
 import Volunteer from "./components/Volunteer/Volunteer";
-import backgroundImg from '../src/assets/backgroundImg.png'
 
 function App() {
   return (
     <>
-      <img 
-        src={backgroundImg}
-        alt="logo" 
-        className="background-img" 
-      />
       <Router>
         <Navbar />
         <Routes>
