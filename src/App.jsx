@@ -11,7 +11,6 @@ import Volunteer from "./components/Volunteer/Volunteer";
 
 function App() {
   return (
-    <>
       <Router>
         <Navbar />
         <Routes>
@@ -23,8 +22,6 @@ function App() {
           <Route path="/volunteer" element={<Volunteer />} />
         </Routes>
       </Router>
-    </>
-    
   );
 }
 
