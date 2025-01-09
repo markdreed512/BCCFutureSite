@@ -47,7 +47,7 @@ footer{
 } 
 
 #envelope {
-color: purple
+color: white
 }
 
 
@@ -82,8 +82,8 @@ color: purple
   width: 30px; /* Set the width of the button */
   height: 30px; /* Set the height of the button */
   border-radius: 50%; /* Make the button rounded */
-  background-color: #6922ac; /* Set the background color */
-  color: gray; /* Set the icon color */
+  background-color: white; /* Set the background color */
+  color: white; /* Set the icon color */
   text-decoration: none; /* Remove underline from links */
   transition: background-color 0.3s; /* Add transition for hover effect */
 }
@@ -94,7 +94,7 @@ color: purple
 }
 
 .social-icon {
-  font-size: 17px; /* Set the icon size */
+  font-size: 24px; /* Set the icon size */
 }
 
 .footer-links {
