@@ -1,17 +1,15 @@
 /* Ensure the footer is at the bottom without overlapping content */
 
 
-
-
-
-
 footer{
   position: relative;
   bottom: 0;
   width: 100%;
-  background-color: #30123B;
+  background-color: #200735; 
   margin-top: 50px;
   z-index: 1000;
+
+  
 }
 
 .top-half {
@@ -30,8 +28,9 @@ footer{
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  border-top:  1px inset #e9ecef;
-  height: 50px;
+  border-top:  1px inset rgba(233, 236, 239, 0.5) ;
+
+  height: 70px;
   padding-left: 155px;
   padding-right: 150px;
 }
@@ -47,13 +46,13 @@ footer{
 } 
 
 #envelope {
-color: white
+color:  rgb(188, 188, 188);
 }
 
 
 
 .email a{
-    color: white;
+    color:    rgb(188, 188, 188);;
     font-size: 20px;
     margin-top: 25px;
 }
@@ -107,7 +106,7 @@ color: white
 
 /* Target the button id of events and all othe nav links */
 .footer-links li, .footer-events, #footerEventsButton {
-  color: gray;
+  color: rgb(188, 188, 188);
   outline: none;
   margin: 0 30px;
   font-family: "DM Sans", Helvetica, sans-serif;
@@ -126,11 +125,12 @@ color: white
   padding: 0;
   margin: 0;
   padding-bottom: 5px;
+
 }
 
 
 .footer-links a {
-  color: grey;
+  color: rgb(188, 188, 188);
   text-decoration: none;
   outline: none;
  

@@ -60,3 +60,14 @@ h2 {
   font-weight: 700;
   line-height: 44px;
 }
+
+/* prevents floating footer*/
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content{
+  flex: 1 1 auto;
+}

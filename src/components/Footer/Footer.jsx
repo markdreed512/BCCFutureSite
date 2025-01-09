@@ -26,7 +26,9 @@ function Footer() {
   }
 
   return (
+    
     <footer>
+ 
       <section className="mini-footer">
         <div className="mini-footer-logo-container">
           <img
@@ -186,6 +188,7 @@ function Footer() {
       </div>
       </section>
     </footer>
+
   );
 }
 
