@@ -16,8 +16,18 @@
 
 body {
   margin: 0;
-  background-color: var(--primary-purple);
+  /* background-color: var(--primary-purple); */
+  height: 100vh;
+  background:radial-gradient(farthest-side, #4d046b 10%,#1f0834 110%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; 
+ 
+  background-position: 50% 100%;
+
+  overflow-y: scroll;
 }
+
 main {
   max-width: 1262px;
   margin: 0 auto;
@@ -49,4 +59,15 @@ h2 {
   font-style: normal;
   font-weight: 700;
   line-height: 44px;
+}
+
+/* prevents floating footer*/
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content{
+  flex: 1 1 auto;
 }

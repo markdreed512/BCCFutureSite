@@ -6,7 +6,7 @@ import logo from "../../assets/bcc-nav.png";
 import HamburgerMenuIcon from "@mui/icons-material/Menu";
 import EventCalIcon from "../../assets/event_cal_icon.svg";
 import EventTypeIcon from "../../assets/event_type_icon.svg";
-import route_names  from '../../data_obj/RouteNames'
+import route_names from "../../data_obj/RouteNames";
 import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -16,7 +16,7 @@ function Navbar() {
   const navigate = useNavigate();
 
   function toggleMenuDisplay() {
-    if (window.innerWidth < 650) {
+    if (window.innerWidth < 740) {
       setIsMobileMenuOpen(true);
     } else {
       setIsMobileMenuOpen(false);
@@ -35,7 +35,7 @@ function Navbar() {
   function navigateToEventTypesPage() {
     navigate(route_names.event_type);
   }
-//
+  //
   function navigateToEventCalPage() {
     navigate(route_names.event_cal);
   }
