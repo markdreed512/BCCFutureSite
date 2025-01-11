@@ -2,14 +2,13 @@
   background: #f4f2f5;
   display: flex;
   position: sticky;
-  z-index:5;
+  z-index: 100;
   top: 0px;
   justify-content: space-between;
   align-items: center;
   height: 85px;
+  width: 100%;
 }
-
-
 
 .navbar__icon {
   display: flex;
