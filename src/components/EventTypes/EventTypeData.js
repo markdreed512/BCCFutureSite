@@ -7,7 +7,7 @@ import demoDay from '../../assets/carouselImages/demo_day.jpg'
 const EventTypeData = [
     {
         name: "Lightning Talks",
-        description: "In our lighting talks, speakers present for 10 minutes on a topic of interest ranging from innovation, software, education, design, art, & architecture etc — with the underlying theme of technology. At the end of each talk the floor is open for you to ask questions and have a dialogue with the speakers as well as with the crowd. The talks form a fast paced and energetic scene, where you can laugh, learn and leave inspired.",
+        description: "In our lighting talks, speakers present for 10 minutes on a topic of interest ranging from innovation, software, education, design, art, & architecture etc — with the underlying theme of technology.\n\nAt the end of each talk, the floor is open for you to ask questions and have a dialogue with the speakers as well as with the crowd. The talks form a fast-paced and energetic scene, where you can laugh, learn, and leave inspired.",        
         img: lightningTalk,
         btnTxt: 'Sign Up',
         link: '/event-types',
