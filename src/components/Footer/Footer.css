@@ -210,8 +210,8 @@ li {
     justify-content: center;
     align-items: center;
     list-style: none;
-    padding: 1;
-    margin: 5;
+ 
+   padding-right: 50px;
   }
   
   .social-list li {
@@ -233,7 +233,7 @@ li {
   .social-icon {
     font-size: 30px; /* Set the icon size */
   }
-
+ 
   .copyright {
    
     color: grey;
