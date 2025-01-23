@@ -16,16 +16,18 @@ function App() {
     <Router>
       <Navbar />
       <div className="content">
-      <Routes >
-        <Route path="/" element={<HomeView />} />
-        <Route path="/event-types" element={<EventTypes />} />
-        <Route path="/event-calendar" element={<EventCalPage />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/volunteer" element={<Volunteer />} />
-      </Routes>
+        <Routes >
+          <Route path="/" element={<HomeView />} />
+          <Route path="/event-types" element={<EventTypes />} />
+          <Route path="/event-calendar" element={<EventCalPage />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/volunteer" element={<Volunteer />} />
+        </Routes>
       </div>
-      <Footer />
+      {/* Todo: fix width issue on footer
+      <Footer /> 
+      */}
     </Router>
     </div>
   );
