@@ -1,6 +1,5 @@
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import "@splidejs/splide/dist/css/splide.min.css";
-import { uid } from 'uid'
 import Options from './MobileCarouselOptions'
 import './MobileCarousel.css'
 
@@ -15,9 +14,9 @@ function MobileCarousel({CardType, slides}) {
             <Splide hasTrack={false} aria-label="Image Carousel"  options={Options}>
                 <SplideTrack>
                         {
-                            slides.map(slide => {
+                            slides.map((slide, i) => {
                                 return (
-                                    <SplideSlide key={uid()}>
+                                    <SplideSlide key={i}>
                                         <CardType content={slide}/>
                                     </SplideSlide>
                                 )

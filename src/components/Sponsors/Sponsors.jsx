@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { uid } from "uid";
 import supabase from '../../utils/supabaseClient'
 import SponsorCard from "../SponsorCard/SponsorCard";
 import MobileSponsorCard from "../MobileSponsorCard/MobileSponsorCard";
@@ -42,7 +41,7 @@ function Sponsors() {
         <div className="desktop-container">
           <div className="sponsors__tiles">
             {sponsors && sponsors.map((sponsor) => {
-              return <SponsorCard sponsor={sponsor} key={uid()} />;
+              return <SponsorCard sponsor={sponsor} key={sponsor.id} />;
             })}
           </div>
           <a href="mailto:test@example.com" className="sponsors__partner-link">
