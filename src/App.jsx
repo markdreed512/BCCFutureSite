@@ -25,9 +25,7 @@ function App() {
           <Route path="/volunteer" element={<Volunteer />} />
         </Routes>
       </div>
-      {/* Todo: fix width issue on footer
       <Footer /> 
-      */}
     </Router>
     </div>
   );
