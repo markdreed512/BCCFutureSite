@@ -12,7 +12,8 @@ function Carousel() {
     return ( 
         <div className="carousel">
             <Splide hasTrack={false} aria-label="Image Carousel"  options={Options}
-            extensions={{ AutoScroll }}>
+            // extensions={{ AutoScroll }}
+            >
                 <SplideTrack>
                     {
                         Slides.map((slide, i) => {

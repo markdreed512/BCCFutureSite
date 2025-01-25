@@ -4,25 +4,23 @@ import Options from './MobileCarouselOptions'
 import './MobileCarousel.css'
 
 function MobileCarousel({CardType, slides}) {
-
-
     if (!Array.isArray(slides)) {
-        return <div>No sponsors available.</div>; // Render a fallback message if slides isn't an array
+        return <div>Carousel unavailable</div>; 
     }
+
     return ( 
         <div className="mobile-carousel">
-            <Splide hasTrack={false} aria-label="Image Carousel"  options={Options}>
+            <Splide hasTrack={false} aria-label="Image Carousel"  options={Options}  >
                 <SplideTrack>
-                        {
-                            slides.map((slide, i) => {
-                                return (
-                                    <SplideSlide key={i}>
-                                        <CardType content={slide}/>
-                                    </SplideSlide>
-                                )
-                            })
-                        }
-                    
+                    {
+                        slides.map((slide, i) => {
+                            return (
+                                <SplideSlide key={i}>
+                                    <CardType content={slide}/>
+                                </SplideSlide>
+                            )
+                        })
+                    }
                 </SplideTrack>
             </Splide>
         </div>

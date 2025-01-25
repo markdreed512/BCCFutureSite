@@ -4,9 +4,12 @@ const Options = {
     arrows: false,
     gap: 25, 
     fixedWidth: '70%',
+    pagination: false,
     drag: true,
-    flick: false,
-    pagination: false
+    clickable: false,
+    perPage: 1,
+    focus: 'center',
+    flickPower: 1
 }
 
 export default Options
