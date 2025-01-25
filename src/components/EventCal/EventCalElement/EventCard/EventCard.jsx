@@ -13,16 +13,27 @@ export default function EventCard({
   attendees,
   eventLink,
 }) {
-  // DATE REFORMATTING LOGIC
-  const formatter = new Intl.DateTimeFormat("en-US", {
-    weekday: "short", // DDD
-    year: "numeric", // YYYY
-    month: "short", // MMM
-    day: "numeric", // D
-    hour: "2-digit", // HH
-    minute: "2-digit", // MM
-    hour12: true, // 12-hour clock with AM/PM
-    timeZoneName: "shortOffset", // Time zone offset (ie "GMT-5")
+  // Check for Mobile Viewport
+  const isMobile = window.innerWidth <= 768
+
+  // DATE REFORMATTING LOGIC 
+  // Adding a ternary operator to change date format for mobile view
+  const formatter = new Intl.DateTimeFormat("en-US",
+    isMobile
+      ? {
+          year: 'numeric',
+          month: '2-digit',
+          day: 'numeric'
+        }
+      : {
+          weekday: "short", // DDD
+          year: "numeric", // YYYY
+          month: "short", // MMM
+          day: "numeric", // D
+          hour: "2-digit", // HH
+          minute: "2-digit", // MM
+          hour12: true, // 12-hour clock with AM/PM
+          timeZoneName: "shortOffset", // Time zone offset (ie "GMT-5")
   });
 
   const formattedDate = formatter.format(date);
@@ -54,11 +65,15 @@ export default function EventCard({
               })}
             </AvatarGroup> */}
       </div>
-      <Button
+      {window.innerWidth > 768
+        ? (
+        <Button
         text="Attend"
         externalLink={eventLink}
         uniqueClassName="event-card__button"
-      />
+      />)
+      : null
+      }
     </div>
   );
 }
