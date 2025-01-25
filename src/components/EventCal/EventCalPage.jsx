@@ -47,6 +47,28 @@ export default function EventCalPage() {
             Past
           </button>
         </div>
+        <div className="event-cal-pg__mobile-tabs">
+          <div className="tab-container">
+            {/* Button for Upcoming Events */}
+            <div
+              className = {`tab ${pageView === 'upcoming' ? 'active' : ''}`}
+              onClick = {() => handleUpcomingPageViewClk()}
+            >
+              Upcoming
+            </div>
+
+            {/* Button for Past Events */}
+            <div
+              className = {`tab ${pageView === 'past' ? 'active' : ''}`}
+              onClick = {() => handlePastPageViewClk()}
+            >
+              Past
+            </div>
+            <div
+              className = {`slider ${pageView === 'past' ? 'slide-right' : ''}`}
+            />
+          </div>
+        </div>
         <EventCalElement
           setPageCount={setPageCount}
           pageView={pageView}
