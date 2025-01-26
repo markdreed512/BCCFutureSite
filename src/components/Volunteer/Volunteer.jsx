@@ -1,5 +1,6 @@
 import "./Volunteer.css";
 import collage from "../../assets/volunteer_collage.png";
+import { Link } from "react-router-dom";
 
 export default function Volunteer() {
   // const collage = "../../assets/volunteer_collage.png";
@@ -22,7 +23,7 @@ export default function Volunteer() {
         something meaningful!</p>
     </div>
 
-    <button className="volunteer button">Volunteer</button>
+    <button className="volunteer button"> <Link to="https://forms.gle/1TGsVjN8LLFPm8eH9"> Volunteer</Link></button>
 
   </section>;
 }
