@@ -9,7 +9,7 @@ const Options = {
     clickable: false,
     perPage: 1,
     focus: 'center',
-    flickPower: 1
+    flickPower: 3
 }
 
 export default Options
