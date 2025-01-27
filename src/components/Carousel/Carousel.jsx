@@ -2,7 +2,6 @@ import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import "@splidejs/splide/dist/css/splide.min.css";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import { Link } from "react-router-dom";
-import { uid } from 'uid'
 import Slides from './Slides'
 import route_names  from '../../data_obj/RouteNames'
 import Options from './SlideOptions'
@@ -13,12 +12,13 @@ function Carousel() {
     return ( 
         <div className="carousel">
             <Splide hasTrack={false} aria-label="Image Carousel"  options={Options}
-            extensions={{ AutoScroll }}>
+            extensions={{ AutoScroll }}
+            >
                 <SplideTrack>
                     {
-                        Slides.map(slide => {
+                        Slides.map((slide, i) => {
                             return (
-                                <SplideSlide key={uid()}>
+                                <SplideSlide key={i}>
                                     <img src={slide.image} alt={slide.title} />
                                     <div className="slide-buttons">
                                         <div className="about-btn"><Link to={route_names.event_type}>About</Link></div>
