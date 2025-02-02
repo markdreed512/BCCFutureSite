@@ -4,12 +4,14 @@ import { useEffect, useState } from "react";
 
 import supabase from "../../../utils/supabaseClient.js";
 
-export default function EventCalElement({ setPageCount, pageView, pageIndex }) {
+export default function EventCalElement({ setPageCount, pageView, pageIndex, isMobile, endOfPageRef }) {
   const [eventsData, setEventsData] = useState(null);
   const [displayEventsData, setDisplayEventsData] = useState(null);
   // const [pastEventsData, setPastEventsData] = useState(null);
   // const [upcomingEventsData, setUpcomingEventsData] = useState(null);
   const [fetchError, setFetchError] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [loadedPages, setLoadedPages] = useState(1);
 
   useEffect(() => {
     const fetchEventsData = async () => {
@@ -91,58 +93,95 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex }) {
     }
   }, [displayEventsData, pageView]);
 
+  // Handle loading next page
+  useEffect(() => {
+    if (endOfPageRef.current && isMobile) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const entry = entries[0];
+          if (entry.isIntersecting && loadedPages < displayEventsData[pageView].length) {
+            setLoading(true)
+            // console.log('loading more events');
+
+            // Add delay before loading more events
+            setTimeout(() => {
+              setLoadedPages((prev) => prev + 1); // Load the next page
+              // console.log('Loading complete');
+              setLoading(false);
+            }, 750); // 0.5 second delay
+          }
+        },
+        {threshold: 1.0}
+      );
+
+      observer.observe(endOfPageRef.current);
+
+      return () => {
+        observer.disconnect();
+      };
+    }
+  }, [isMobile, displayEventsData, pageView, loadedPages, endOfPageRef]);
+
   return (
     <section className="event-cal">
-      {fetchError && <p className="event-cal__error-msg">{fetchError}</p>}
+      {fetchError && <p className = 'event-cal__error-msg'>{fetchError}</p>}
 
       {/* POPULATE CARDS VIA MAPPING */}
       {displayEventsData &&
-        displayEventsData[pageView].length > 0 &&
-        displayEventsData[pageView][pageIndex].map((event) => {
-          const {
-            id,
-            title,
-            image,
-            description,
-            start_date,
-            attendees,
-            hyper_link,
-          } = event;
+        displayEventsData[pageView].slice(0, loadedPages).map((events) => {
+          return events.map((event) => {
+            const {
+              id, 
+              title, 
+              image, 
+              description, 
+              start_date, 
+              attendees, 
+              hyper_link
+            } = event;
 
-          // REFORMAT DATE
-          const date = new Date(start_date);
+            // REFORMAT DATE
+            const date = new Date(start_date);
 
-          const simpleDate = new Intl.DateTimeFormat("en-US", {
-            month: "short",
-            day: "numeric",
-            hour: "2-digit",
-            minute: "2-digit",
-            hour12: true,
-          }).format(date);
-          //
+            const simpleDate = new Intl.DateTimeFormat('en-US', {
+              month: 'short',
+              day: 'numeric',
+              hour: '2-digit',
+              minute: '2-digit',
+              hour12: true
+            }).format(date);
 
-          return (
-            <div key={id} className="event-cal__section">
-              <time className="event-cal__date" dateTime={start_date}>
-                {simpleDate.toUpperCase()}
-              </time>
-              <div className="event-cal__divider">
-                <div className="event-cal__dot"></div>
-                <div className="event-cal__line"></div>
+            return (
+              <div key = {id} className = 'event-cal__section'>
+                <time dateTime={start_date} className="event-cal__date">
+                  {simpleDate.toUpperCase()}
+                </time>
+                <div className="event-cal__divider">
+                  <div className="event-cal__dot"></div>
+                  <div className="event-cal__line"></div>
+                </div>
+                <EventCard 
+                  date = {date}
+                  dateStr = {start_date}
+                  name = {title}
+                  description = {description}
+                  img = {image}
+                  attendees = {attendees}
+                  eventLink = {hyper_link}
+                />
               </div>
-              <EventCard
-                date={date}
-                dateStr={start_date}
-                name={title}
-                description={description}
-                img={image}
-                attendees={attendees}
-                eventLink={hyper_link}
-              />
-            </div>
-          );
-        })}
+            );
+          });
+        })
+      }
+
       {/* END OF MAPPING */}
+      {/* Trigger point for infinite scrolling */}
+      <div ref = {endOfPageRef} className = 'event-cal__load-trigger'></div>
+
+      <div className="event-cal__loading">
+        {loading && <p>Loading more events...</p>}
+      </div>
     </section>
-  );
+  )
 }
