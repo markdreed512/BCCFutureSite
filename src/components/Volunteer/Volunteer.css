@@ -1,16 +1,26 @@
 .volunteer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+ 
     align-items: center;
-    text-align: center;
+  
     margin-top: 30px;
     padding: 0 52px;
 }
+.volunteer h1 {
+    font-size: 60px;
+    line-height: 1;
+    padding:0%;
 
+   
+  
+}
 .volunteer_top {
     margin-top: 50px;
+    margin-bottom: 50px;
     max-width: 70%;
+
+    
 }
 
 .volunteer p{
@@ -31,7 +41,7 @@
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur( 0x );
     -webkit-backdrop-filter: blur( 100px );
-  
+    
     max-width: 35%;
 }
 
@@ -54,12 +64,12 @@
 
 @media (max-width: 900px) {
     .volunteer h1 {
-        font-size: 32px;
+        font-size: 60px;
         line-height: 1;
         padding:0%;
     }
     .volunteer p{
-        font-size: 22px;
+        font-size: 25px;
         line-height: 1;
         padding:0%;
     }
