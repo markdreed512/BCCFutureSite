@@ -12,8 +12,8 @@ export default function Volunteer() {
       <p>Play an active role in Baltimore’s rise as a tech hub by joining our volunteer team!</p>
    
     </div>
-
-    <img src={collage} className="volunteer collage"/>
+   
+    <img src={collage} className="collage"/>
 
     <div className="volunteer_bottom">
       <p>If you’re passionate about coding and looking to increase your involvement in the 
