@@ -121,3 +121,10 @@
     transform: translateX(92%);
   }
 }
+
+
+@media (max-width: 1060px) {
+  .event-cal-pg__title {
+    font-size: 34px;
+  }
+}
