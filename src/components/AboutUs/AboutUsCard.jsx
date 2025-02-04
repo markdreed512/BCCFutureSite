@@ -1,6 +1,5 @@
 import './AboutUsCard.css'
 import cafeImg from '../../assets/code&coffee.png'
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { Link } from "react-router-dom";
 import route_names  from '../../data_obj/RouteNames'
