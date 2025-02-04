@@ -16,7 +16,7 @@ function HomeView() {
             />
             <section className="intro-section">
                 <h1>Baltimore&apos;s best in&#x2011;person tech meetup</h1>
-                <p>An inclusive, informal, co-working meetup for people of all skill levels. Bring a laptop and ideas, we`&apos;`ll bring coffee!</p>
+                <p>An inclusive, informal, co-working meetup for people of all skill levels. Bring a laptop and ideas, we&apos;ll bring coffee!</p>
             </section>
             <section className="carousel-section">
                 <Carousel />
