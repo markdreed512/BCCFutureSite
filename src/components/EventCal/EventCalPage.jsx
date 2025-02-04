@@ -7,7 +7,7 @@ export default function EventCalPage() {
   const [pageCount, setPageCount] = useState(0);
   const [pageView, setPageView] = useState("past");
   const [page, setPage] = useState(1);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 960) // Determine if the view is mobile
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1060) // Determine if the view is mobile
 
   const endOfPageRef = useRef(null); // Reference to find end of page and trigger loading, if applicable
 
@@ -24,7 +24,9 @@ export default function EventCalPage() {
   }
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 960);
+    const handleResize = () => setIsMobile(window.innerWidth <= 1060);
+
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
