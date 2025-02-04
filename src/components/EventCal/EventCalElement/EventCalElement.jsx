@@ -122,7 +122,8 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex, isM
     }
   }, [isMobile, displayEventsData, pageView, loadedPages, endOfPageRef]);
 
-  return (
+  return isMobile ? (
+    // Mobile view with infinite scrolling
     <section className="event-cal">
       {fetchError && <p className = 'event-cal__error-msg'>{fetchError}</p>}
 
@@ -183,5 +184,59 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex, isM
         {loading && <p>Loading more events...</p>}
       </div>
     </section>
-  )
+  ) : (
+    // Desktop view with pagination
+    <section className="event-cal">
+      {fetchError && <p className="event-cal__error-msg">{fetchError}</p>}
+
+      {/* POPULATE CARDS VIA MAPPING */}
+      {displayEventsData &&
+        displayEventsData[pageView].length > 0 &&
+        displayEventsData[pageView][pageIndex].map((event) => {
+          const {
+            id,
+            title,
+            image,
+            description,
+            start_date,
+            attendees,
+            hyper_link,
+          } = event;
+
+          // REFORMAT DATE
+          const date = new Date(start_date);
+
+          const simpleDate = new Intl.DateTimeFormat("en-US", {
+            month: "short",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+            hour12: true,
+          }).format(date);
+          //
+
+          return (
+            <div key={id} className="event-cal__section">
+              <time className="event-cal__date" dateTime={start_date}>
+                {simpleDate.toUpperCase()}
+              </time>
+              <div className="event-cal__divider">
+                <div className="event-cal__dot"></div>
+                <div className="event-cal__line"></div>
+              </div>
+              <EventCard
+                date={date}
+                dateStr={start_date}
+                name={title}
+                description={description}
+                img={image}
+                attendees={attendees}
+                eventLink={hyper_link}
+              />
+            </div>
+          );
+        })}
+      {/* END OF MAPPING */}
+    </section>
+  );
 }
