@@ -12,6 +12,29 @@
     "attendees link";
 
   gap: 20px;
+  position: relative;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.event-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateX(-3px) translateY(-5px);
+}
+
+.event-card:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+.event-card:hover::after {
+  width: 100%;
 }
 
 .event-card__info {
