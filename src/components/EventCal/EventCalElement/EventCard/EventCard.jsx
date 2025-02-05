@@ -41,7 +41,7 @@ export default function EventCard({
   //
 
   return (
-    <Link to = {eventLink}>
+    <Link to = {eventLink} target = '_blank'>
       <div className="event-card">
         <div className="event-card__info">
           <time className="event-card__time" dateTime={dateStr}>
