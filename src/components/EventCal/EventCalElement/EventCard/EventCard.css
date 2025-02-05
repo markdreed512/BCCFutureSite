@@ -18,19 +18,7 @@
 
 .event-card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  transform: translateX(-3px) translateY(-5px);
-}
-
-.event-card:after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: -10px;
-  width: 0;
-  height: 2px;
-  background: #fff;
-  transition: all 0.4s ease;
-  transform: translateX(-50%);
+  transform: translateX(-2px) translateY(-3px);
 }
 
 .event-card:hover::after {
@@ -170,5 +158,9 @@
     margin-bottom: 20px;
     color: #e0e0e0;
     padding: 0 12px;
+  }
+  .event-card:hover {
+
+    transform: none;
   }
 }
