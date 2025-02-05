@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 52px;
+}
+
+.about-us p{
+    margin-top: 0px;
+    font-family:var(--primary-font);
+    color: var(--primary-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.about-us_top {
+    margin-top: 50px;
+    max-width: 70%;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.contributor-title{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column; /* Keeps rows stacked */
+    gap: 0px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .row-1 {
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+        gap: 10px;
+      
+  }
+  .row-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 10px;
+  }
+  
+  .gallery-item1 {
+    text-align: center;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 8px;
+  }
+
+  .gallery-item2 {
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 8px;
+  }
+    
+  
+  /* Different background colors for the first and second row */
+  .row-1  {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  
+  .row-2 {
+    background-color: rgba(255, 255, 255, 0.10);
+  }
+  
+  .gallery-item1 img,.gallery-item2 img {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover; /* Ensures images scale properly */
+    border-radius: 5px;
+  }
+  
+  .name {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  /* Mobile View*/
+  @media (max-width: 768px) {
+    .gallery-container {
+      display: flex;
+      flex-direction: column;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 10px;
+      align-items: center; 
+      justify-content: center;
+    }
+  
+    .row-1,
+    .row-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%; 
+    }
+  
+    .gallery-item {
+      flex: 0 0 auto; /* Prevents shrinking */
+      width: 200px; 
+    }
+
+    .gallery-item1 img,.gallery-item2 img {
+        width: 120px;
+        height: 150; 
+        object-fit: cover; 
+        border-radius: 5px;
+      }
+  }
+  
