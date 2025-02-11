@@ -74,51 +74,6 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex, isM
           past: groupEvents(pastEvents),
           upcoming: groupEvents(upcomingEvents)
         });
-
-        // The following correctly groups the events into Past & Upcoming but does not sort them
-        // const currentDate = new Date();
-        // const pastEvents = [];
-        // const upcomingEvents = [];
-        // let i = 0;
-        // let j = 0;
-        // let k = 1;
-
-        // while (i < eventsData.length) {
-        //   let eventDate = new Date(eventsData[i].start_date);
-
-        //   if (eventDate < currentDate) {
-        //     const currentPastEventsIndex = Math.floor(j / 6);
-
-        //     if (j % 6 !== 0) {
-        //       pastEvents[currentPastEventsIndex].push(eventsData[i]);
-        //     } else {
-        //       pastEvents.push([eventsData[i]]);
-        //     }
-
-            
-
-        //     j++;
-        //   } else {
-        //     const currentUpcomingEventsIndex = Math.floor(k / 6);
-            
-
-        //     if (k % 6 !== 0) {
-        //       // Ensure the block exists before pushing
-        //       if (!upcomingEvents[currentUpcomingEventsIndex]) {
-        //         upcomingEvents[currentUpcomingEventsIndex] = [];
-        //       }
-
-        //       upcomingEvents[currentUpcomingEventsIndex].push(eventsData[i]);
-        //     } else {
-        //       upcomingEvents.push([eventsData[i]]);
-        //     }
-
-        //     k++;
-        //   }
-
-        //   i++;
-        // }
-        // setDisplayEventsData({ past: pastEvents, upcoming: upcomingEvents });
       }
     }
 
@@ -182,12 +137,12 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex, isM
               start_date, 
               attendees, 
               hyper_link,
+              location
             } = event;
 
             // REFORMAT DATE
             const date = new Date(start_date);
             const currentDate = new Date();
-            const isUpcoming = date >= currentDate;
 
             const simpleDate = new Intl.DateTimeFormat('en-US', {
               month: 'short',
@@ -214,7 +169,7 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex, isM
                   img = {image}
                   attendees = {attendees}
                   eventLink = {hyper_link}
-                  isUpcoming = {isUpcoming}
+                  location = {location}
                 />
               </div>
             );
@@ -247,12 +202,12 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex, isM
             start_date,
             attendees,
             hyper_link,
+            location
           } = event;
 
           // REFORMAT DATE
           const date = new Date(start_date);
           const currentDate = new Date();
-          const isUpcoming = date >= currentDate;
 
           const simpleDate = new Intl.DateTimeFormat("en-US", {
             month: "short",
@@ -280,7 +235,7 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex, isM
                 img={image}
                 attendees={attendees}
                 eventLink={hyper_link}
-                isUpcoming = {isUpcoming}
+                location = {location}
               />
             </div>
           );
