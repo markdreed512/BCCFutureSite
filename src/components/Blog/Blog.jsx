@@ -1,5 +1,28 @@
 import "./Blog.css";
-
 export default function Blog() {
-  return <section className="blog"></section>;
+  return (
+    <section className="blog">
+      <div className="blog-header">
+      <h1>Code & Coffee Review</h1>
+        <h4>A Fresh Brew of Tech Insights, Community Stories, and Coding Tips</h4>
+      </div>
+      <div className="mini-blog-header">
+        <h1>Code & Coffee Review</h1>
+        
+
+      </div>
+      <div className="bottom_border"></div>
+      <section className="bottom">
+         <div className="blog_section" >
+         <p>Articles Coming Soon !</p> 
+          
+          
+        </div>
+    </section>
+     
+    </section>
+    
+   
+    
+  );
 }
