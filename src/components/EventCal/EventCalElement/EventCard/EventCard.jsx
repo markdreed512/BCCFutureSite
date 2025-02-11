@@ -13,7 +13,7 @@ export default function EventCard({
   img,
   attendees,
   eventLink,
-  isUpcoming
+  location
 }) {
   // Check for Mobile Viewport
   const isMobile = window.innerWidth <= 1060
@@ -49,6 +49,7 @@ export default function EventCard({
             {formattedDate}
           </time>
           <h2 className="event-card__title">{name}</h2>
+          <h4 className="event-card__location">{location}</h4>
           <FormattedDescription
             text={description}
             textClassName={"event-card__description"}
@@ -68,13 +69,6 @@ export default function EventCard({
                 })}
               </AvatarGroup> */}
         </div>
-        {isUpcoming && (
-          <Button
-            text="Attend"
-            externalLink={eventLink}
-            uniqueClassName="event-card__button"
-          />
-        )}
       </div>
     </Link>
   )
