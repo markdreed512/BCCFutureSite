@@ -13,6 +13,7 @@ export default function EventCard({
   img,
   attendees,
   eventLink,
+  isUpcoming
 }) {
   // Check for Mobile Viewport
   const isMobile = window.innerWidth <= 1060
@@ -67,15 +68,13 @@ export default function EventCard({
                 })}
               </AvatarGroup> */}
         </div>
-        {/* {window.innerWidth > 1060
-          ? (
+        {isUpcoming && (
           <Button
-          text="Attend"
-          externalLink={eventLink}
-          uniqueClassName="event-card__button"
-        />)
-        : null
-        } */}
+            text="Attend"
+            externalLink={eventLink}
+            uniqueClassName="event-card__button"
+          />
+        )}
       </div>
     </Link>
   )
