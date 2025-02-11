@@ -57,7 +57,7 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex, isM
 
         const upcomingEvents = eventsData
           // Separate upcoming events from data set
-          .filter((event) => new Date(event.start_date) > currentDate)
+          .filter((event) => new Date(event.start_date) >= currentDate)
           // Sort events in ascending chronological order
           .sort((a, b) => new Date(a.start_date) - new Date(b.start_date));
 
