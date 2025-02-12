@@ -29,6 +29,11 @@
   grid-area: info;
 }
 
+.event-cal-pg__tabs button{
+
+  font-size: 1.3rem;
+}
+
 .event-card__time {
   text-transform: uppercase;
   font-family: var(--secondary-font);
