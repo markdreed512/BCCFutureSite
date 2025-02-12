@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import supabase from "../../../utils/supabaseClient.js";
 
-export default function EventCalElement({ setPageCount, pageView, pageIndex, isMobile, endOfPageRef }) {
+export default function EventCalElement({ setPageCount, pageView, pageIndex, isMobile, endOfPageRef, setInitialPageView }) {
   const [eventsData, setEventsData] = useState(null);
   const [displayEventsData, setDisplayEventsData] = useState(null);
   // const [pastEventsData, setPastEventsData] = useState(null);
@@ -60,6 +60,12 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex, isM
           .filter((event) => new Date(event.start_date) >= currentDate)
           // Sort events in ascending chronological order
           .sort((a, b) => new Date(a.start_date) - new Date(b.start_date));
+          // console.log(upcomingEvents.length !== 0);
+          // Change initial load state of EventCalPage if there are upcoming events
+          if (upcomingEvents.length !== 0) {
+            setInitialPageView('upcoming');
+          }
+          
 
         // Group events in blocks of 6 for pagination or adding to infinite scrolling
         function groupEvents(events) {
