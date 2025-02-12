@@ -108,3 +108,12 @@
   text-decoration: none; /* Remove underline from links */
   transition: background-color 0.3s; /* Add transition for hover effect */
 }
+
+
+.container button {
+
+  background: none;
+  border: none;
+
+
+}
