@@ -86,6 +86,9 @@ export default function EventCalPage() {
           pageIndex={page - 1}
           isMobile = {isMobile} // Pass the mobile view flag to EventCalElement
           endOfPageRef = {endOfPageRef} // Pass the observer target for scroll listener
+          setInitialPageView = {(view) => {
+            setPageView((prev) => (prev === 'past' ? view : prev));
+          }}
         />
       </main>
       {!isMobile && (
