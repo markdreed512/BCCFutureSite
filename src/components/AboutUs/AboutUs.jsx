@@ -6,8 +6,6 @@ export default function AboutUs() {
         <div className="about-us_top">
           <p>Foster learning and building meaningful relationships within Baltimore&apos;s tech community.</p>
         </div>
-    
-        
 
         <div className=" gallery-container">
         {/*First Row*/ }
