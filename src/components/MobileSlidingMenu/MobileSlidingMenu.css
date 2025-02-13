@@ -5,15 +5,13 @@
     height: auto;
     overflow-x: hidden;
     z-index: 10001 !important;
-    
-    
   }
  
   /* The side-menu navigation */
   .container  .side-menu {
     position: absolute;
     margin-top: 21px;
-    right: -800px; /* Increased width for larger menu */
+    right: -100% ;/* Increased width for larger menu */
     width: 100%;
     height: 100vh;
     background:radial-gradient(farthest-side, #4d046b 10%,#1f0834 110%);
@@ -21,8 +19,6 @@
     z-index: 10001 !important;
     padding: 0; /* Remove padding */
     transition: right 0.4s ease;
-   
-    
   }
 
   /* When open, slide it into view */
@@ -32,9 +28,6 @@
     overflow-y: auto;
     height: 100vh;
     width: 100%;
-    
-
-   
   }
 
 
@@ -71,7 +64,9 @@
     margin-right: 15px;
     width: 24px;
     height: 24px;
+    opacity: 0.1;
   }
+
 
   .side-menu .social-list ul, p{
     display: flex;
@@ -100,8 +95,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px; /* Set the width of the button */
-  height: 40px; /* Set the height of the button */
+  width: 42px; /* Set the width of the button */
+  height: 42px; /* Set the height of the button */
   border-radius: 50%; /* Make the button rounded */
   background: rgba(184, 184, 184, 0.2);
   color: rgb(195, 195, 195);
@@ -114,6 +109,8 @@
 
   background: none;
   border: none;
-
+  -webkit-tap-highlight-color: transparent; /* Removes tap highlight on iOS */
+  user-select: none; /* Prevents text/icon selection */
+  -webkit-touch-callout: none; /* Prevents callout on long-press */
 
 }

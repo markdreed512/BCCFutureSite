@@ -1,5 +1,6 @@
 import './MobileSlidingMenu.css';
 import React, { useState, useEffect } from 'react';
+import { Menu as HamburgerMenuIcon, Close as CloseIcon } from '@mui/icons-material';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMeetup,
@@ -52,7 +53,17 @@ function MobileSlidingMenu({ buttonId, menuId, buttonIcon, menuItems }) {
   return (
     <div className="container">
       <button id={buttonId} onClick={toggleMenu}>
-        {buttonIcon}
+        {isOpen ? (
+          <CloseIcon 
+            fontSize="large"
+     
+          />
+        ) : (
+          <HamburgerMenuIcon 
+            fontSize="large"
+           
+          />
+        )}
       </button>
 
       {/* The sliding menu */}
