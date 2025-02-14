@@ -109,7 +109,7 @@ body {
     border-radius: 25px;
   }
   
-  .name {
+  .name, .role {
     margin-top: 5px;
     font-weight: bold;
   }
