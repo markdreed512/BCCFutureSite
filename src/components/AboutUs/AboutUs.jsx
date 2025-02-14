@@ -3,7 +3,9 @@ import { useEffect, useState } from 'react';
 import supabase from "../../utils/supabaseClient.js";
 
 export default function AboutUs() {
+
   const [members, setMembers] = useState([]);
+
 
   // Fetch members from Supabase
   useEffect(() => {
