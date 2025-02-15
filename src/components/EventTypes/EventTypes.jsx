@@ -12,7 +12,7 @@ export default function EventTypes() {
       const tag = location.pathname.split('/').pop(); // Extract tag from URL
       const element = document.getElementById(tag);
       if (element) {
-        element.scrollIntoView({behavior: 'smooth'});
+        element.scrollIntoView({behavior: 'instant'});
       }
     }
   }, [location]);
