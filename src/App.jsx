@@ -19,6 +19,7 @@ function App() {
         <Routes >
           <Route path="/" element={<HomeView />} />
           <Route path="/event-types" element={<EventTypes />} />
+          <Route path="/event-types/:tag?" element={<EventTypes />} />
           <Route path="/event-calendar" element={<EventCalPage />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/blog" element={<Blog />} />
