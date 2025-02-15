@@ -11,7 +11,8 @@ const EventTypeData = [
         img: lightningTalk,
         btnTxt: 'Sign Up',
         link: 'https://forms.gle/Lb3NfQLqhfxbv2oX7 ',
-        id: "lightning-talk-card"
+        id: "lightning-talk-card",
+        tag: "lightning-talks"
     },
     {
         name: "Symposiums",
@@ -19,7 +20,8 @@ const EventTypeData = [
         img: symposium,
         btnTxt: 'Sign Up',
         link: 'https://forms.gle/hTqzESszwoJZuodq5',
-        id: "symposium-card"
+        id: "symposium-card",
+        tag: "symposiums"
     },
     {
         name: "Regular Meetings",
@@ -27,7 +29,8 @@ const EventTypeData = [
         img: regularMeeting,
         btnTxt: 'View Events',
         link: '/event-calendar',
-        id: "regular-meeting-card"
+        id: "regular-meeting-card",
+        tag: "meetings"
     },
     {
         name: "Workshops",
@@ -35,7 +38,8 @@ const EventTypeData = [
         img: workshop,
         btnTxt: 'Sign Up',
         link: 'https://forms.gle/PRV7fgARQ3wXxzHDA ',
-        id: "workshop-card"
+        id: "workshop-card",
+        tag: "workshops"
     },
     {
         name: "Demo Day",
@@ -43,7 +47,8 @@ const EventTypeData = [
         img: demoDay,
         btnTxt: 'Sign Up',
         link: 'https://forms.gle/dt4V7jL5VzhRSBCD9',
-        id: "demo-day-card"
+        id: "demo-day-card",
+        tag: "demo-days"
     },
 ]
 
