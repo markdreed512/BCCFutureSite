@@ -27,7 +27,7 @@ const EventTypeCard = ({eventType}) => {
     return (
         <div 
             className="EventTypeCard"
-            id={eventType.id}
+            id={eventType.tag}
             style={{backgroundImage: `url(${backgroundImage})`}}
         >
             <div className="EventTypeCard__container">
