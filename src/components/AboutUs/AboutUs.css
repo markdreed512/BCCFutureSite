@@ -53,8 +53,8 @@ body {
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    border-top-left-radius: 20px; 
-    border-top-right-radius: 20px;
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px;
     background-color: rgba(255, 255, 255, 0.25);
     
 }
@@ -85,8 +85,8 @@ body {
   .row-2 {
     display: flex; 
     flex-direction: column; /* Stack title and gallery grid vertically */
-    border-bottom-left-radius: 20px; 
-    border-bottom-right-radius: 20px; 
+    border-bottom-left-radius: 5px; 
+    border-bottom-right-radius: 5px; 
     background-color: rgba(255, 255, 255, 0.10);
   }
 
@@ -108,7 +108,7 @@ body {
     width: 200px;
     height: 200px; 
     object-fit: cover; /* Ensures images scale properly */
-    border-radius: 25px;
+    border-radius: 5px;
 
   
   }
@@ -119,7 +119,7 @@ body {
   }
    
   .gallery-item1 a, .gallery-item2 a {
-    color: white; /* Sets the text color to white */
+    color: rgba(214, 209, 209, 0.765) /* Sets the text color to white */
   }
   
   .gallery-item1 a:hover,.gallery-item2 a:hover {
