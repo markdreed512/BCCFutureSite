@@ -6,6 +6,8 @@
 
 .event-cal-pg__title {
   margin-bottom: 47px;
+  font-size: var(--heading-desktop);
+  padding-left: 5%;
 }
 
 .event-cal-pg__divider {
