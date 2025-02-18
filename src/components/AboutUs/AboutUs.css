@@ -192,19 +192,23 @@ body {
 }
 
 #jae-namelink{
-  margin-left:-68px;
+  margin-left:-50px;
 }
 
 #brice-namelink{
-  margin-left:-40px;
+  margin-left:-45px;
 }
 
 #mark-namelink{
-  margin-left:-57px;
+  margin-left:-68px;
 }
 
 #tanner-namelink{
-  margin-left:-57px;
+  margin-left:44px;
+}
+
+#tanner-role{
+  text-align:left;
 }
 
 #beza-namelink{
@@ -213,6 +217,10 @@ body {
 
 #brent-namelink{
   margin-left:-33px;
+}
+
+#john-namelink{
+  margin-left:-50px;
 }
 
 .row-1 .gallery-items-container {
