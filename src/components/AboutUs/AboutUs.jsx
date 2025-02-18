@@ -6,15 +6,15 @@ export default function AboutUs() {
   const [members, setMembers] = useState([]);
   const [teamRoles, setTeamRoles] = useState([]);
 
-  // Fetch members and team roles from Supabase
+  // Fetching members and team roles from Supabase
   useEffect(() => {
     const fetchData = async () => {
-      // Fetch members
+      // members
       const { data: memberData, error: memberError } = await supabase
         .from('member')
         .select('id, first_name, last_name, profile_link');
 
-      // Fetch team roles
+      // team roles
       const { data: roleData, error: roleError } = await supabase
         .from('team_roles')
         .select('id, role');
