@@ -30,6 +30,7 @@
 
 .navbar__link {
   text-decoration: none;
+  color: #181818;
 }
 
 #navEventsButton,
@@ -39,6 +40,7 @@
   
 }
 
+/* targets only the dropdown */
 .MuiButtonBase-root,
 #navEventsButton,
 .navbar__desktop-menu,
@@ -50,6 +52,11 @@
   color: #181818;
 }
 
+ .navbar__desktop-menu-item .navbar__link{
+  color: #181818;
+
+  font-size: 14px;
+}
 #mobileEventTypeBtn,
 #mobileEventCalBtn {
   font-style: italic;
