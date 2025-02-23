@@ -39,12 +39,12 @@ function Footer() {
           </div>
         <div className="mini-footer-menu">
           <ul>
+          <li>
+              <Link to={route_names.event_cal}>Event Calendar</Link>
+           </li>
             <li>
               <Link to={route_names.about_us}>About Us</Link>
             </li>
-            <li>
-              <Link to={route_names.event_cal}>Event Calendar</Link>
-           </li>
            <li>
               <Link to={route_names.event_type}>Event Types</Link>
            </li>
@@ -116,9 +116,6 @@ function Footer() {
         <div className="footer-links">
           <ul>
             <li>
-              <Link to={route_names.about_us}>About Us</Link>
-            </li>
-            <li>
               <DropdownMenu
               className="footer-events"
                 buttonId="footerEventsButton"
@@ -139,6 +136,9 @@ function Footer() {
                   },
                 ]}
               />
+            </li>
+            <li>
+              <Link to={route_names.about_us}>About Us</Link>
             </li>
             <li>
               <Link to={route_names.blog}>Blog</Link>
