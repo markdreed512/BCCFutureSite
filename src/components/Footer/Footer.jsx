@@ -1,6 +1,6 @@
 import "./Footer.css";
-import { Link, useNavigate } from "react-router-dom";
-import DropdownMenu from "../DropdownMenu/DropdownMenu";
+import { Link  } from "react-router-dom";
+import EventsDropdownMenu from "../EventsDropdownMenu/EventsDropdownMenu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMeetup,
@@ -9,21 +9,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import logo from "../../assets/whitetranslogo.png";
-import EventCalIcon from "../../assets/event_cal_icon.svg";
-import EventTypeIcon from "../../assets/event_type_icon.svg";
 import route_names from "../../data_obj/RouteNames";
 
 
 function Footer() {
-  const navigate = useNavigate();
-
- function navigateToEventTypesPage() {
-    navigate(route_names.event_type);
-  }
-
-  function navigateToEventCalPage() {
-    navigate(route_names.event_cal);
-  }
 
   return (
     
@@ -119,26 +108,7 @@ function Footer() {
               <Link to={route_names.about_us}>About Us</Link>
             </li>
             <li>
-              <DropdownMenu
-              className="footer-events"
-                buttonId="footerEventsButton"
-                menuId="footerEventsMenu"
-                buttonTitle="Events"
-                menuItems={[
-                  {
-                    name: "Type of Events",
-                    id: "footerEventType",
-                    handleClick: navigateToEventTypesPage,
-                    icon: EventTypeIcon,
-                  },
-                  {
-                    name: "Event Calendar",
-                    id: "footerEventCalendar",
-                    handleClick: navigateToEventCalPage,
-                    icon: EventCalIcon,
-                  },
-                ]}
-              />
+              <EventsDropdownMenu />
             </li>
             <li>
               <Link to={route_names.blog}>Blog</Link>

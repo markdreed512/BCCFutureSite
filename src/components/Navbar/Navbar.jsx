@@ -1,6 +1,4 @@
-// src/components/Navbar/Navbar.jsx
-import DropdownMenu from "../DropdownMenu/DropdownMenu";
-//import logo from "../../assets/BCC_logo.png";
+import EventsDropdownMenu from "../EventsDropdownMenu/EventsDropdownMenu";
 import logo from "../../assets/bcc-nav.png";
 import HamburgerMenuIcon from "@mui/icons-material/Menu";
 import EventCalIcon from "../../assets/event_cal_icon.svg";
@@ -32,14 +30,6 @@ function Navbar() {
     };
   }, []);
 
-  function navigateToEventTypesPage() {
-    navigate(route_names.event_type);
-  }
-  //
-  function navigateToEventCalPage() {
-    navigate(route_names.event_cal);
-  }
-
   return (
     <nav className="navbar">
       <Link to="/">
@@ -48,25 +38,7 @@ function Navbar() {
       {!isMobileMenuOpen && (
         <ul className="navbar__desktop-menu">
           <li className="navbar__desktop-menu-item">
-            <DropdownMenu
-              buttonId="navEventsButton"
-              menuId="navEventsMenu"
-              buttonTitle="Event"
-              menuItems={[
-                {
-                  name: "Type of Events",
-                  id: "eventType",
-                  handleClick: navigateToEventTypesPage,
-                  icon: EventTypeIcon,
-                },
-                {
-                  name: "Event Calendar",
-                  id: "eventCalendar",
-                  handleClick: navigateToEventCalPage,
-                  icon: EventCalIcon,
-                },
-              ]}
-            />
+            <EventsDropdownMenu />
           </li>
           <li className="navbar__desktop-menu-item">
             <Link className="navbar__link" to={route_names.about_us}>
