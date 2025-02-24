@@ -60,6 +60,7 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/company/baltimore-code-coffee/"
                 className="social-button"
+                target ='_blank'
               >
                 <FontAwesomeIcon className="social-icon" icon={faLinkedin} />
               </a>
@@ -68,6 +69,7 @@ function Footer() {
               <a
                 href="https://baltimoretech.slack.com/archives/CTDNSM6EP"
                 className="social-button"
+                target = '_blank'
               >
                 <FontAwesomeIcon className="social-icon" icon={faSlack} />
               </a>
@@ -76,6 +78,7 @@ function Footer() {
               <a
                 href="https://www.meetup.com/baltimore-code-and-coffee"
                 className="social-button"
+                target = '_blank'
               >
                 <FontAwesomeIcon className="social-icon" icon={faMeetup} />
               </a>
@@ -137,6 +140,7 @@ function Footer() {
             <a
               href="https://www.linkedin.com/company/baltimore-code-coffee/"
               className="social-button"
+              target = '_blank'
             >
               <FontAwesomeIcon className="social-icon" icon={faLinkedin} />
             </a>
@@ -145,6 +149,7 @@ function Footer() {
             <a
               href="https://baltimoretech.slack.com/archives/CTDNSM6EP"
               className="social-button"
+              target = '_blank'
             >
               <FontAwesomeIcon className="social-icon" icon={faSlack} />
             </a>
@@ -153,6 +158,7 @@ function Footer() {
             <a
               href="https://www.meetup.com/baltimore-code-and-coffee"
               className="social-button"
+              target = '_blank'
             >
               <FontAwesomeIcon className="social-icon" icon={faMeetup} />
             </a>
