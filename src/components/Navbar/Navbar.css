@@ -57,6 +57,20 @@
 
   font-size: 14px;
 }
+
+.navbar__desktop-menu .navbar__desktop-menu-item a{
+  color: #000;
+}
+
+
+nav .dropdown-menu{
+  top:0px;
+  color: #181818;
+  margin-top: 6px;
+
+}  
+
+
 #mobileEventTypeBtn,
 #mobileEventCalBtn {
   font-style: italic;
