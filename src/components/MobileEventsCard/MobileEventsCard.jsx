@@ -8,7 +8,7 @@ function MobileEventsCard({content}) {
             <h3>{content.title}</h3>
             <img src={content.image} alt={content.title} />
             <div className="buttons">
-                <Link to={route_names.event_type}>About</Link>
+                <Link to={route_names.event_type}>Info</Link>
                 <Link to={route_names.event_cal}>View Events</Link>
             </div>
         </div>

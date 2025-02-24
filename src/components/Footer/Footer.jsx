@@ -28,12 +28,12 @@ function Footer() {
           </div>
         <div className="mini-footer-menu">
           <ul>
+          <li>
+              <Link to={route_names.event_cal}>Event Calendar</Link>
+           </li>
             <li>
               <Link to={route_names.about_us}>About Us</Link>
             </li>
-            <li>
-              <Link to={route_names.event_cal}>Event Calendar</Link>
-           </li>
            <li>
               <Link to={route_names.event_type}>Event Types</Link>
            </li>
