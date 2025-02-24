@@ -24,7 +24,7 @@ export default function Volunteer() {
         something meaningful!</p>
     </div>
 
-    <button className="volunteer button"> <Link to="https://forms.gle/1TGsVjN8LLFPm8eH9"> Volunteer</Link></button>
+    <button className="volunteer button"> <Link to="https://forms.gle/1TGsVjN8LLFPm8eH9" target = '_blank'> Volunteer</Link></button>
 
   </section>);
 }
