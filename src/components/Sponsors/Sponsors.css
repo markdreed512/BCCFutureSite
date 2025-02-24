@@ -52,6 +52,7 @@
      
 }
 
+
 .buttor_bar{
     display: flex;
     justify-content: center;
@@ -59,6 +60,13 @@
 
 .mobile-carousel{
     display: none;
+}
+.sponsor_button:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateX(.3px) translateY(-.4px);
+    background-color:rgba(184, 184, 184, 0.15);
+    
+ 
 }
 @media screen and (max-width: 1215px){
     .sponsors__tiles{
