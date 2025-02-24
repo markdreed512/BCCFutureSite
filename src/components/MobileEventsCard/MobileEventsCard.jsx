@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import route_names  from '../../data_obj/RouteNames'
 
 function MobileEventsCard({content}) {
-    console.log('slide content:', content)
     return   ( 
         <div className="mobile-events-card" id={content.id}>
             <h3>{content.title}</h3>
