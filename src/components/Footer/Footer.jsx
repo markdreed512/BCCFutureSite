@@ -104,11 +104,11 @@ function Footer() {
         </div>
         <div className="footer-links">
           <ul>
-            <li>
-              <Link to={route_names.about_us}>About Us</Link>
+          <li>
+              <EventsDropdownMenu />
             </li>
             <li>
-              <EventsDropdownMenu />
+              <Link to={route_names.about_us}>About Us</Link>
             </li>
             <li>
               <Link to={route_names.blog}>Blog</Link>
