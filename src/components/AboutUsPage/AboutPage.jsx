@@ -83,8 +83,10 @@ useEffect(() => {
 
 return (
   <section className="about-us">
-    <h1 className="about-us">Our Mission</h1>
-    <div className="about-us_top">
+    
+   
+    <div className="about-us-top">
+    <h1 className="about-us-h1">Our Mission</h1>
       <p>Foster learning and building meaningful relationships within Baltimore&apos;s tech community.</p>
     </div>
     <div className="gallery-container">
