@@ -3,9 +3,7 @@
 .about-us {
     display: flex;
     flex-direction: column;
-    
    color: white;
-
     margin-top: 30px;
     padding: 0 72px;
 }
@@ -33,7 +31,6 @@
     border-bottom: 2px solid;
     border-color: rgba(255, 255, 255, 0.2);
     min-width: 100%;
-    
     margin-bottom: 50px;
 }
 
@@ -45,7 +42,8 @@
 .gallery-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
     
     flex-wrap: nowrap; 
 
@@ -94,7 +92,7 @@ becuase there appears to be differnet defualt spacing on them */
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 12%;
+    padding: 15%;
     margin-top: 2%;
    
 }
@@ -102,7 +100,7 @@ becuase there appears to be differnet defualt spacing on them */
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5%;
+    padding: 15%;
     margin-top: 2%;
    
 }
@@ -129,8 +127,50 @@ becuase there appears to be differnet defualt spacing on them */
 vertical-align: middle
 }
 
+/*1090px max for 3 grid*/
+
+
+
+/* Tablet View */
+@media (max-width: 1310px) {
+    .about-us {
+        padding: 0 20px;
+    }
+    .gallery-items-container {
+        display: grid;
+        grid-template-columns:  repeat(2, 1fr); /* Maximum of 3 items per row */
+    
+    }
+
+
+    .gallery-item1 img, .gallery-item2 img {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    .row-1  {
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: nowrap; 
+      
+  
+       
+   }
+
+   .row-2  {
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: nowrap; 
+        margin-bottom: 20%;
+   }
+
+}
+
+
+
 /* Mobile View */
-@media (max-width: 770px) {
+@media (max-width: 670px) {
     .about-us {
         padding: 0 20px;
     }
@@ -165,4 +205,43 @@ vertical-align: middle
 
 }
 
+/* Small Mobile View */
+@media (max-width: 440px) {
+    .about-us {
+        padding: 0 20px;
+    }
+    .gallery-items-container {
+        display: grid;
+        grid-template-columns: none; /* Maximum of 3 items per row */
+    
+    }
+
+
+    .gallery-item1 img, .gallery-item2 img {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    .row-1  {
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: nowrap; 
+  
+       
+   }
+
+   .row-2  {
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: nowrap; 
+        margin-bottom: 20%;
+   }
+
+   .row-2 .about-us.contributor-title {
+    text-align: center;
+   }
+ 
+
+}
 
