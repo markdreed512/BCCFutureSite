@@ -30,14 +30,17 @@
 
 .navbar__link {
   text-decoration: none;
+  color: #181818;
 }
 
 #navEventsButton,
 #mobileNavEventsButton {
   color: #181818;
   text-transform: capitalize;
+  
 }
 
+/* targets only the dropdown */
 .MuiButtonBase-root,
 #navEventsButton,
 .navbar__desktop-menu,
@@ -49,6 +52,25 @@
   color: #181818;
 }
 
+ .navbar__desktop-menu-item .navbar__link{
+  color: #181818;
+
+  font-size: 14px;
+}
+
+.navbar__desktop-menu .navbar__desktop-menu-item a{
+  color: #000;
+}
+
+
+nav .dropdown-menu{
+  top:0px;
+  color: #181818;
+  margin-top: 6px;
+
+}  
+
+
 #mobileEventTypeBtn,
 #mobileEventCalBtn {
   font-style: italic;
@@ -57,4 +79,11 @@
 
 .navbar__menu-icon {
   padding-right: 4px;
+}
+
+/* adjust thickness of hamburger lines*/
+.MuiSvgIcon-root[data-testid="MenuIcon"] {
+  stroke-width: 0.005px;
+  stroke: #181818; /* Maintains your current color */
+
 }

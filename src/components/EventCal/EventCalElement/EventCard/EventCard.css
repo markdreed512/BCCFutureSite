@@ -29,6 +29,11 @@
   grid-area: info;
 }
 
+.event-cal-pg__tabs button{
+
+  font-size: 1.3rem;
+}
+
 .event-card__time {
   text-transform: uppercase;
   font-family: var(--secondary-font);
@@ -36,6 +41,13 @@
   font-weight: 500;
   line-height: 1.4;
   color: #400c62;
+}
+
+.event-card__location {
+  order: 4;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .event-card__title {
@@ -146,6 +158,12 @@
     font-weight: normal;
     color: #e0e0e0;
     margin-top: 4px;
+  }
+
+  .event-card__location {
+    order: 4;
+    font-weight: normal;
+    margin: 10px 0;
   }
 
   .event-card__description {

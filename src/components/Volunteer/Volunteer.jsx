@@ -5,12 +5,13 @@ import { Link } from "react-router-dom";
 export default function Volunteer() {
   // const collage = "../../assets/volunteer_collage.png";
 
-  return <section className="volunteer">
+  return (<section className="volunteer">
   
-    <h1 className="volunteer">Make Your Mark</h1>
-    <div className="volunteer_top">
-      <p>Play an active role in Baltimore’s rise as a tech hub by joining our volunteer team!</p>
-   
+    <div className="volunteer_header">
+      <h1 className="volunteer_title">Make Your Mark</h1>
+      <div className="volunteer_top">
+        <p>Play an active role in Baltimore’s rise as a tech hub by joining our volunteer team!</p>
+      </div>
     </div>
    
     <img src={collage} className="collage"/>
@@ -23,7 +24,7 @@ export default function Volunteer() {
         something meaningful!</p>
     </div>
 
-    <button className="volunteer button"> <Link to="https://forms.gle/1TGsVjN8LLFPm8eH9"> Volunteer</Link></button>
+    <button className="volunteer button"> <Link to="https://forms.gle/1TGsVjN8LLFPm8eH9" target = '_blank'> Volunteer</Link></button>
 
-  </section>;
+  </section>);
 }

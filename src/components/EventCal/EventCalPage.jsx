@@ -34,7 +34,7 @@ export default function EventCalPage() {
   return (
     <div className="event-cal-pg">
       <h1 className="event-cal-pg__title">
-        Code Coffee Events: Connect, Learn, and Innovate Together!
+        Code & Coffee Events: Connect, Learn, and Innovate Together!
       </h1>
       <div className="event-cal-pg__divider"></div>
       <main className="event-cal-pg__main">
@@ -86,6 +86,9 @@ export default function EventCalPage() {
           pageIndex={page - 1}
           isMobile = {isMobile} // Pass the mobile view flag to EventCalElement
           endOfPageRef = {endOfPageRef} // Pass the observer target for scroll listener
+          setInitialPageView = {(view) => {
+            setPageView((prev) => (prev === 'past' ? view : prev));
+          }}
         />
       </main>
       {!isMobile && (

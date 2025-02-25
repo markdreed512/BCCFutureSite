@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import supabase from "../../../utils/supabaseClient.js";
 
-export default function EventCalElement({ setPageCount, pageView, pageIndex, isMobile, endOfPageRef }) {
+export default function EventCalElement({ setPageCount, pageView, pageIndex, isMobile, endOfPageRef, setInitialPageView }) {
   const [eventsData, setEventsData] = useState(null);
   const [displayEventsData, setDisplayEventsData] = useState(null);
   // const [pastEventsData, setPastEventsData] = useState(null);
@@ -46,41 +46,40 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex, isM
   useEffect(() => {
     function organizeEvents() {
       if (eventsData) {
+        // The following code will group the events into Past & Upcoming blocks and sort them by date
         const currentDate = new Date();
-        const pastEvents = [];
-        const upcomingEvents = [];
-        let i = 0;
-        let j = 0;
-        let k = 1;
+        
+        const pastEvents = eventsData
+          // Separate past events from data set
+          .filter((event) => new Date(event.start_date) < currentDate)
+          // Sort events in descending chronological order
+          .sort((a, b) => new Date(b.start_date) - new Date(a.start_date));
 
-        while (i < eventsData.length) {
-          let eventDate = new Date(eventsData[i].start_date);
-
-          if (eventDate < currentDate) {
-            const currentPastEventsIndex = Math.floor(j / 6);
-
-            if (j % 6 !== 0) {
-              pastEvents[currentPastEventsIndex].push(eventsData[i]);
-            } else {
-              pastEvents.push([eventsData[i]]);
-            }
-
-            j++;
-          } else {
-            const currentUpcomingEventsIndex = Math.floor(k / 6);
-
-            if (k % 6 !== 0) {
-              upcomingEvents[currentUpcomingEventsIndex].push(eventsData[i]);
-            } else {
-              upcomingEvents.push([eventsData[i]]);
-            }
-
-            k++;
+        const upcomingEvents = eventsData
+          // Separate upcoming events from data set
+          .filter((event) => new Date(event.start_date) >= currentDate)
+          // Sort events in ascending chronological order
+          .sort((a, b) => new Date(a.start_date) - new Date(b.start_date));
+          // console.log(upcomingEvents.length !== 0);
+          // Change initial load state of EventCalPage if there are upcoming events
+          if (upcomingEvents.length !== 0) {
+            setInitialPageView('upcoming');
           }
+          
 
-          i++;
+        // Group events in blocks of 6 for pagination or adding to infinite scrolling
+        function groupEvents(events) {
+          const grouped = [];
+          for (let i = 0; i < events.length; i += 6) {
+            grouped.push(events.slice(i, i + 6));
+          }
+          return grouped;
         }
-        setDisplayEventsData({ past: pastEvents, upcoming: upcomingEvents });
+
+        setDisplayEventsData({
+          past: groupEvents(pastEvents),
+          upcoming: groupEvents(upcomingEvents)
+        });
       }
     }
 
@@ -99,7 +98,12 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex, isM
       const observer = new IntersectionObserver(
         (entries) => {
           const entry = entries[0];
-          if (entry.isIntersecting && loadedPages < displayEventsData[pageView].length) {
+          if (
+            // The following check eliminates the error "Cannot read properties of null (reading 'past')"
+            entry.isIntersecting && 
+            displayEventsData &&
+            displayEventsData[pageView] &&
+            loadedPages < displayEventsData[pageView].length) {
             setLoading(true)
             // console.log('loading more events');
 
@@ -138,11 +142,13 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex, isM
               description, 
               start_date, 
               attendees, 
-              hyper_link
+              hyper_link,
+              location
             } = event;
 
             // REFORMAT DATE
             const date = new Date(start_date);
+            const currentDate = new Date();
 
             const simpleDate = new Intl.DateTimeFormat('en-US', {
               month: 'short',
@@ -169,6 +175,7 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex, isM
                   img = {image}
                   attendees = {attendees}
                   eventLink = {hyper_link}
+                  location = {location}
                 />
               </div>
             );
@@ -201,10 +208,12 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex, isM
             start_date,
             attendees,
             hyper_link,
+            location
           } = event;
 
           // REFORMAT DATE
           const date = new Date(start_date);
+          const currentDate = new Date();
 
           const simpleDate = new Intl.DateTimeFormat("en-US", {
             month: "short",
@@ -232,6 +241,7 @@ export default function EventCalElement({ setPageCount, pageView, pageIndex, isM
                 img={image}
                 attendees={attendees}
                 eventLink={hyper_link}
+                location = {location}
               />
             </div>
           );

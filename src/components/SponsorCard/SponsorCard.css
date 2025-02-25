@@ -5,20 +5,23 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 30px 28px;
     border: 1px solid #412157;
+   
     /* flex: 1;
     min-width: 200px; */
 }
+
+.sponsor-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateX(-.5px) translateY(-1px);
+  }
+  
 .sponsor-card h3{
     font-weight: 400;
 }
 .sponsor-card__logo{
     height: 50px;
 }
-#wix_card img{
-    width: 110px;
-    height: 50px;
-    object-fit: cover;
-}
+
 .sponsor-card__bottom{
     color: var(--primary-white);
 }
