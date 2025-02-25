@@ -71,6 +71,8 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     background-color: rgba(255, 255, 255, 0.10);
+    flex-wrap: nowrap; 
+    margin-bottom: 50px;
 }
 
 /* Fix for the nested gal-items-container issue */
@@ -162,7 +164,7 @@ vertical-align: middle
         display: flex; 
         flex-direction: column;
         flex-wrap: nowrap; 
-        margin-bottom: 20%;
+
    }
 
 }
@@ -199,7 +201,7 @@ vertical-align: middle
         display: flex; 
         flex-direction: column;
         flex-wrap: nowrap; 
-        margin-bottom: 20%;
+   
    }
  
 
@@ -235,7 +237,7 @@ vertical-align: middle
         display: flex; 
         flex-direction: column;
         flex-wrap: nowrap; 
-        margin-bottom: 20%;
+
    }
 
    .row-2 .about-us.contributor-title {
