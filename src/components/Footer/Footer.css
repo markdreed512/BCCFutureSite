@@ -172,8 +172,45 @@ footer .dropdown-menu{
   }
 }  
 
+/*Tablet styling 
+@media  (max-width: 1034px) {
+  .footer-links ul {
+    display: inline;
+    justify-content: flex-end;
+    align-items: center;
+    
+
+
+
+
+  
+  }*/
+
+
+/* Tablet styling */
+@media (max-width: 1034px) {
+  /* Adjust the footer links container */
+  .footer-links {
+    padding-bottom: 40px;
+    width: 100%;
+  }
+  
+  /*Warp footler links in 3x3 max grid*/
+  .footer-links ul {
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr); /* Maximum of 3 items per row */
+
+    gap: 20px 20px; /* Row gap, column gap */
+
+  }
+  
+
+ 
+}
+
+ 
 /*Mobile styling */
-@media  (max-width: 955px) {
+@media  (max-width: 840px) {
   .mini-footer {
     display: block;
   }
