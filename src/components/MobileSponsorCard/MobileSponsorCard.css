@@ -20,3 +20,15 @@
     color: white;
 
 }
+
+.mobile-sponsor-card__type {
+    padding: 10px 25px;
+    /* background-color: var(--secondary-purple); */
+    background-color: #37074b;
+    border-radius: 10px;
+    width: 25%;
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 10px;
+}
