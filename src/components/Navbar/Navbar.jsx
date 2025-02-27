@@ -78,14 +78,6 @@ function Navbar() {
               disabled: true,
             },
             {
-              name: "Type of Events",
-              id: "mobileEventTypeBtn",
-              handleClick: () => {
-                navigate(route_names.event_type);
-              },
-              icon: EventTypeIcon,
-            },
-            {
               name: "Event Calendar",
               id: "mobileEventCalBtn",
               handleClick: () => {
@@ -93,6 +85,15 @@ function Navbar() {
               },
               icon: EventCalIcon,
             },
+            {
+              name: "Event Types",
+              id: "mobileEventTypeBtn",
+              handleClick: () => {
+                navigate(route_names.event_type);
+              },
+              icon: EventTypeIcon,
+            },
+            
             {
               name: "About Us",
               id: "mobileAboutUsBtn",
