@@ -13,6 +13,9 @@ function SponsorCard({sponsor}) {
                 <h3>{sponsor.name}</h3>
                 <p>{sponsor.description}</p>
             </div>
+            <div className="sponsor-card__type">
+                <p>{sponsor.type}</p>
+            </div>
             </Link>
         </div>
   
