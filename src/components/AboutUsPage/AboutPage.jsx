@@ -27,8 +27,12 @@ useEffect(() => {
       } else {
         console.log('Fetched members:', memberData);
         console.log('Fetched team roles:', roleData);
+        
         setMembers(memberData);
         setTeamRoles(roleData);
+        
+        console.log('Team 1 members:', getMemberInfo(1));
+        console.log('Team 3 members:', getMemberInfo(3));
 
       }
     };
@@ -36,26 +40,6 @@ useEffect(() => {
     fetchData();
   }, []);
 
-
-  // Helper function to get a member's full name, profile link, and role by ID
-  /*const getMemberInfo = (id) => {
-    const member = members.find(member => member.id == id);
-
-    const role = teamRoles.find(role => role.id == id)?.role || 'Loading...';
-    console.log(member)
-
-    return member ? [{ 
-      fullName: `${member.first_name} ${member.last_name}`, 
-      profileLink: member.profile_link,
-      role: role,
-      img: member.headshot
-    }] : [{ 
-      fullName: 'Loading...', 
-      profileLink: '#',
-      role: 'Loading...'
-    }];
-  };*/
-  // Process member data to include role information
   const getMemberInfo = (teamId) => {
     return members.map(member => {
         // Find roles that match both the member_id and team_id
