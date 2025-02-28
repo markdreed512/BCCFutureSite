@@ -41,6 +41,8 @@
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
+
+  
 }
 
 .collage{
@@ -60,7 +62,9 @@
 }
 
 .volunteer_bottom P{
-    padding-left: 5%;
+    margin: 0 auto;
+    max-width: 70%;
+    margin-bottom: 20px;
   
     
 }
