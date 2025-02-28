@@ -52,16 +52,18 @@
 }
 
 .sponsor-card__type {
-    color: var(--secondary-white);
-    padding: 10px 25px;
-    background-color: #37074b;
-    border-radius: 10px;
-    width: 25%;
+    color:white;
+    padding: 10px 20px;
+   background-color: rgba(126, 116, 217, 0.16);
+    border-radius: 5px;
+    width: 18%;
     text-align: center;
     justify-content: center;
     margin-top: 20px;
     position: absolute;
     bottom: 15px;
+    height: 4%;
+    font-size: 15px;
 }
 
 .sponsor-card__bottom {

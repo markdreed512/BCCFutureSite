@@ -39,11 +39,13 @@
 }
 
 .sponsor_button{
+    margin-top: 30px;
     background-color: rgba(184, 184, 184, 0.26);
     line-height: 44px;
-    border-radius: 10px;
-    padding: 5px 10px;
+    border-radius: 7px;
+    padding: 10px 10px;
     border: none;
+
 
 
 }
