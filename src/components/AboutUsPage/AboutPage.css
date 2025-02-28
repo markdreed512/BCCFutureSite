@@ -29,8 +29,8 @@
     margin-bottom: 20px;
     font-size: 22px;
     text-align: left;
-    border-bottom: 2px solid;
-    border-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid;
+    border-color: rgba(255, 255, 255, 0.15);
     min-width: 100%;
     margin-bottom: 50px;
 }

@@ -16,7 +16,7 @@ export default function DropdownMenu() {
         <div className="hoverable-spacer"></div>
         <ul>
           <Link className="navbar__link" to='/event-types'>
-            <li><img src={EventCalIcon}/>Type of Events</li>
+            <li><img src={EventCalIcon}/>Event Types</li>
           </Link>
           <Link className="navbar__link" to='/event-calendar'>
             <li><img src={EventTypeIcon}/>Event Calendar</li>

@@ -55,13 +55,16 @@ color:  rgb(188, 188, 188);
     color:    rgb(188, 188, 188);;
     font-size: 20px;
     margin-top: 25px;
+ 
 }
 
 .email a:hover{
     color: purple;
     transition: 0.3s;
 }
-
+.email{
+  white-space: nowrap;
+}
 .social-list {
   display: flex;
   justify-content: center; /* Center the items horizontally */
@@ -188,7 +191,7 @@ footer .dropdown-menu{
     display: grid;
     grid-template-columns:  repeat(3, 1fr); /* Maximum of 3 items per row */
 
-    gap: 20px 20px; /* Row gap, column gap */
+    gap: 20px 10px; /* Row gap, column gap */
 
   }
   
