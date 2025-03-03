@@ -21,9 +21,10 @@
     font-size: 60px;
     line-height: 1;
     padding:0%;
+    margin-bottom: 10px;
 }
 .volunteer_top {
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 50px;
     max-width: 70%;   
     padding:0%;
@@ -31,16 +32,17 @@
 }
 
 .volunteer p{
-    margin-top: 0px;
+ 
     font-family:var(--primary-font);
     color: var(--primary-white);
     display: flex;
     justify-content: left;
     align-items: left;
     text-align: left;
-    font-size: 30px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
+    margin-top: 20px;
 
   
 }

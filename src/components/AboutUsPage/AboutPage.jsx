@@ -87,7 +87,8 @@ return (
    
     <div className="about-us-top">
     <h1 className="about-us-h1">Our Mission</h1>
-      <p>Foster learning and building meaningful relationships within Baltimore&apos;s tech community.</p>
+      <p>Foster learning and build meaningful relationships within Baltimore&apos;s tech community.</p>
+      
     </div>
     <div className="gallery-container">
       {/* First Row : Gets items by Mapping*/}
@@ -123,7 +124,7 @@ return (
           ))}
         </div>
       </div>
-
+    
     </div>
   </section>
 );
