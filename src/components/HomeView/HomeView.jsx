@@ -1,4 +1,4 @@
-import Sponsors from '../sponsors/Sponsors'
+import Sponsors from '../Sponsors/Sponsors'
 import Carousel from '../Carousel/Carousel';
 import './HomeView.css'
 import AboutUsCard from '../AboutUs/AboutUsCard';
