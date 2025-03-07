@@ -201,7 +201,7 @@ footer .dropdown-menu{
 
  
 /*Mobile styling */
-@media  (max-width: 840px) {
+@media  (max-width: 830px) {
   .mini-footer {
     display: block;
   }

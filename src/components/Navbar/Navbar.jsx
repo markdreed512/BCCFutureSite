@@ -14,7 +14,7 @@ function Navbar() {
   const navigate = useNavigate();
 
   function toggleMenuDisplay() {
-    if (window.innerWidth < 740) {
+    if (window.innerWidth < 830) {
       setIsMobileMenuOpen(true);
     } else {
       setIsMobileMenuOpen(false);
