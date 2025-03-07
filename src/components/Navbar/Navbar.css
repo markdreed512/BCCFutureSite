@@ -95,10 +95,10 @@ nav .dropdown-menu{
   .navbar__icon {
     display: flex;
     align-items: center;
-    width: 180px;
-    height: 55px;
+   
     padding: 0px;
     cursor: pointer;
-    margin-left: 33px;
+    margin-left: 25px;
+    transform: scale(1);
   }
 }
