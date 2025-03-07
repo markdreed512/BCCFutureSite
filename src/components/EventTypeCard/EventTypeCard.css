@@ -133,6 +133,11 @@ a:link, a:visited {
 
 /* Mobile Styling */
 @media (max-width: 768px) {
+    .EventTypeCard::before {
+
+        background: none;
+     
+    }
     .EventTypeCard {
         width: 100%;
         height: 525px;
@@ -141,13 +146,14 @@ a:link, a:visited {
         background-position-x: 120%;
         background-position-y: 0;
         background-repeat: no-repeat;
-        background: rgb(85, 28, 160);
+       
         /* background: rgb(112, 0, 255); */
         border-radius: 10px;
     }
 
     .EventTypeCard__container {
-        background: rgba(184, 184, 184, 0.3);
+        
+        background: rgba(184, 184, 184, 0.20);
         backdrop-filter: blur(10x);
         -webkit-backdrop-filter: blur(10px);
         /* border: 1px solid rgba(255, 255, 255, 0.18); */
@@ -169,7 +175,7 @@ a:link, a:visited {
     .EventTypeCard__title {
         font-size: 30px;
         transition: none;
-        font-weight: bold;
+      
     }
 
     .EventTypeCard:hover .EventTypeCard__title {
@@ -213,6 +219,13 @@ a:link, a:visited {
 
 /* Tablet Styling */
 @media (min-width: 769px) and (max-width: 1030px) {
+
+.EventTypeCard::before {
+
+    background: linear-gradient(none);
+ 
+}
+
     .EventTypeCard {
         width: 90%;
         height: 500px;
