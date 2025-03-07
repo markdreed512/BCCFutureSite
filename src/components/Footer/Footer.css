@@ -39,8 +39,7 @@ footer{
 #footer-logo {
   display: flex;
   align-items: center;
-  height: 100px;
-  width: 200px;
+
   margin-top: 50px;
   margin-bottom: 25px;
 } 

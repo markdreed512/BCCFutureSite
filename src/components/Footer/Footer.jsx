@@ -8,7 +8,7 @@ import {
   faSlack,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import logo from "../../assets/whitetranslogo.png";
+import logo from "../../assets/whitetranslogo.svg";
 import route_names from "../../data_obj/RouteNames";
 
 
