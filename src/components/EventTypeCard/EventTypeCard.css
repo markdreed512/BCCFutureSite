@@ -108,19 +108,30 @@
 
 .EventTypeCard__btn {
     background-color: var(--primary-white);
-    color: #4a2c8a;
+
     border: none;
     border-radius: 20px;
     padding: 10px 30px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.8s ease;
+
 }
 
 .EventTypeCard__btn:hover {
-    /* background-color: #4a2c8a;
-    color: var(--primary-white); */
+    background: rgba(184, 184, 184, 0.36);
+    backdrop-filter: blur( x );
+    -webkit-backdrop-filter: blur( 100px );
+    color: white;
+    & a{ /*Nest to reach link text as well*/
+        color: white;
+    }
+ 
+   
+
 }
+
+
+
 
 @media (min-width: 769px) { .EventTypeCard__container:hover {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(78, 0, 110, 1));
