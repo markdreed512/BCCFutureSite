@@ -15,6 +15,7 @@ function App() {
     <div id="root">
     <Router>
       <Navbar />
+      <div class="bg-fixed"></div>
       <div className="content">
         <Routes >
           <Route path="/" element={<HomeView />} />
