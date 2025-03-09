@@ -20,6 +20,7 @@
     margin-bottom: 26px;
 }
 .sponsors__description{
+    font-size: 20px;
     font-family: var(--secondary-font);
 }
 .sponsors__tiles{
@@ -107,5 +108,20 @@
 @media screen and (max-width: 620px){
     .sponsors__tiles{
         grid-template-columns: 1fr;
+    }
+   
+    .sponsors{
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 0;
+       
+    }
+    
+    .sponsors .sponsors__description{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        margin-left: 10px;
+        
     }
 }
