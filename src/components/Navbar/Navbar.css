@@ -8,6 +8,7 @@
   align-items: center;
   height: 85px;
   width: 100%;
+  
 }
 
 .navbar__icon {
@@ -90,8 +91,23 @@ nav .dropdown-menu{
 
 }
 
+@media screen and (max-width : 500px) {
+  .navbar {
+    position: fixed;
+
+    
+  }
+  
+  
+}
 
 @media screen and (max-width: 440px) {
+
+  .navbar {
+    height: 60px;
+    width: 100%;
+  }
+ 
   .navbar__icon {
     display: flex;
     align-items: center;
