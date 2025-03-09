@@ -127,7 +127,7 @@ color:  rgb(188, 188, 188);
   padding: 0;
   margin: 0;
   padding-bottom: 5px;
-  margin-top: 60px;
+  padding-top: 85px;
 
 }
 
@@ -182,7 +182,7 @@ footer .dropdown-menu{
 @media (max-width: 1034px) {
   /* Adjust the footer links container */
   .footer-links {
-    padding-bottom: 40px;
+    
     width: 100%;
   }
   
@@ -193,7 +193,7 @@ footer .dropdown-menu{
     grid-template-columns:  repeat(3, 1fr); /* Maximum of 3 items per row */
 
     gap: 20px 10px; /* Row gap, column gap */
-    margin-left: 40px;
+    margin-left: 30px;
 
   }
   
@@ -297,6 +297,7 @@ footer .dropdown-menu{
     display: grid;
         grid-template-columns:  repeat(2, 1fr);
         column-gap:40px;
+        
   }
 
 }
