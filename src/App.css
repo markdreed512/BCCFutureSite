@@ -17,8 +17,10 @@
   --heading-mobile :40px
 }
 
+
 body {
   margin: 0;
+
   height: 100vh;
   overflow-y: scroll;
 }
@@ -82,4 +84,9 @@ h2 {
 }
 
 
+/*As margin for fixed nav-bar*/
+@media screen and (max-width: 500px) {
+  .content {margin-top: 50px !important ;
+  }
+}
 
