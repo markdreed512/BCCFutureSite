@@ -192,8 +192,8 @@ footer .dropdown-menu{
     
     grid-template-columns:  repeat(3, 1fr); /* Maximum of 3 items per row */
 
-    gap: 20px 10px; /* Row gap, column gap */
-    padding-left: 30px;
+    gap: 20px 0px; /* Row gap, column gap */
+    padding-left: 10px;
 
   }
   
