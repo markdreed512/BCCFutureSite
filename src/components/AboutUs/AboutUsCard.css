@@ -179,12 +179,6 @@
   }
 
   @media screen and (min-width: 320px) and (max-width: 600px) {
-    .about-us {
-      /* width: 80vw; */
-      /* display: flex; */
-      /* align-items: center; */
-    }
-
     .about-us__container {
       display: flex;
       flex-direction: column;
