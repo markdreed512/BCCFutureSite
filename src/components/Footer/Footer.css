@@ -127,7 +127,7 @@ color:  rgb(188, 188, 188);
   padding: 0;
   margin: 0;
   padding-bottom: 5px;
-  padding-top: 85px;
+  padding-top: 75px;
 
 }
 
@@ -193,7 +193,7 @@ footer .dropdown-menu{
     grid-template-columns:  repeat(3, 1fr); /* Maximum of 3 items per row */
 
     gap: 20px 10px; /* Row gap, column gap */
-    margin-left: 30px;
+    padding-left: 30px;
 
   }
   
