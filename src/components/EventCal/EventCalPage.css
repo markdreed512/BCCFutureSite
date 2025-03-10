@@ -10,6 +10,8 @@
   padding-left: 5%;
 }
 
+
+
 .event-cal-pg__divider {
   flex-grow: 1;
   height: 1px;
@@ -49,7 +51,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .event-cal-pg__tabs,
   .event-cal-pg__title,
   .event-cal-pg__divider, 
@@ -57,6 +59,7 @@
   .event-cal__divider {
     display: none;
   }
+
 
   .event-cal-pg {
     padding: 40px 0;
