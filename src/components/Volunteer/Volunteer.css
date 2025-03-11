@@ -2,10 +2,9 @@
     display: flex;
     flex-direction: column;
     padding: 0 52px;
-    margin-top: 30px;
+    margin-top: 35px;
 
   }
-  
   
   .volunteer_header {
     min-width: 100%;
@@ -57,7 +56,7 @@
     font-family: var(--primary-font);
     color: var(--primary-white);
     text-align: left;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     margin-top: 20px;
