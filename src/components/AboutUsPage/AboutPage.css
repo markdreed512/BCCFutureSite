@@ -4,8 +4,10 @@
     display: flex;
     flex-direction: column;
    color: white;
-    margin-top: 30px;
-    padding: 0 72px;
+   
+   padding: 0 40px;
+   margin-top: 40px;
+  
     
 }
 
@@ -17,7 +19,7 @@
     font-style: normal;
     font-weight: 400;
     margin-bottom: 50px;
-    max-width: 60%;
+  
     margin-top: 10px;
 }
 
@@ -28,14 +30,23 @@
 
 
 .about-us-top {
-    margin-bottom: 20px;
+
     font-size: 22px;
     text-align: left;
     border-bottom: 1px solid;
     border-color: rgba(255, 255, 255, 0.15);
-    min-width: 100%;
+    width: 100%;
     margin-bottom: 50px;
-    padding-left: 3%;
+    
+
+}
+
+.about-us-top h1 {
+    padding-left: 5%;
+}
+
+.about-us-top p{
+    padding-left: 5%;
 }
 
 .contributor-title {
@@ -222,6 +233,7 @@ vertical-align: middle
     .about-us-top .about-us-h1 {
    
         font-size: var(--heading-mobile);
+        align-items: center;
     }
     
 
