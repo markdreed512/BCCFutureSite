@@ -98,11 +98,11 @@
     }
     .sponsors h2,
     .sponsors p{
-        font-size: 32px;
+        font-size: 20px;
     }
     .sponsors p{
         font-weight: 400;
-        text-align: left;
+        
     }
 }
 @media screen and (max-width: 620px){
@@ -116,12 +116,5 @@
         padding: 0;
        
     }
-    
-    .sponsors .sponsors__description{
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 300;
-        margin-left: 10px;
-        
-    }
+   
 }
