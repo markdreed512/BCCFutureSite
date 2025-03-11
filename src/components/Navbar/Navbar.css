@@ -101,7 +101,7 @@ nav .dropdown-menu{
   
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 500px) {
 
   .navbar {
     height: 60px;
