@@ -107,11 +107,14 @@
   object-position: center;
 } */
 
+.event-card__info h2 {
+  line-height: 1.3;
 
+}
 
 /* Mobile Styling */
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .event-card {
     background: rgba(184, 184, 184, 0.3);
     backdrop-filter: blur(10px);
