@@ -4,7 +4,7 @@ export default function Blog() {
     <section className="blog">
       <div className="blog-header">
       <h1>Code & Coffee Review</h1>
-        <h4>A Fresh Brew of Tech Insights, Community Stories, and Coding Tips</h4>
+        <p>A Fresh Brew of Tech Insights, Community Stories, and Coding Tips</p>
       </div>
       <div className="mini-blog-header">
         <h1>Code & Coffee Review</h1>
