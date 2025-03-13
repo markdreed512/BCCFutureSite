@@ -146,7 +146,7 @@ button.custom.splide__arrow{
         }
     }
 }
-@media (max-width: 708px){
+@media (max-width: 830px){
     .carousel{
         display: none;
     }
