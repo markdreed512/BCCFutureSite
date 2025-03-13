@@ -1,3 +1,6 @@
+
+
+
 .mobile-sponsor-link .mobile-sponsor-card{
     padding: 64px 31px;
     
@@ -10,6 +13,7 @@
         font-size: 16px;
         font-family: var(--secondary-font);
         line-height: 24px;
+        
     }
 }
 .mobile-sponsor-card__logo{
@@ -21,6 +25,8 @@
 
 }
 
+
+
 .mobile-sponsor-card__type {
     padding: 7px 18px;
     /* background-color: var(--secondary-purple); */
@@ -31,5 +37,32 @@
     margin-top: 20px;
     position: absolute;
     bottom: 15px;
+    color: white;
+    font-size: 15px;
+    font-family: var(--secondary-font);
     
+}
+
+
+@media screen and (min-width: 609px){
+    
+.mobile-sponsor-card {
+
+    height: 35vw;
+   width: 25vw;
+ 
+    
+}
+
+.mobile-sponsor-card p.description{
+    width: 210%;
+    font-size: 18px;
+    
+
+}
+
+.mobile-sponsor-card__type{
+    width: 10%;
+}
+
 }
