@@ -7,7 +7,7 @@ import demoDay from '../../assets/carouselImages/demo_day.jpg'
 const EventTypeData = [
     {
         name: "Lightning Talks",
-        description: "In our lighting talks, speakers present for 10 minutes on a topic of interest ranging from innovation, software, design, and more.\n\nAt the end of each talk, the floor is open for you to ask questions and have a dialogue with the speakers as well as with the crowd. The talks form a fast-paced and energetic scene, where you can laugh, learn, and leave inspired.",        
+        description: "In our lighting talks, speakers present for 10 minutes on topics ranging from innovation, software, design, and more.\n\nAt the end of each talk, the floor is open for you to ask questions and have a dialogue with the speakers. The talks form a fast-paced and energetic scene, where you can laugh, learn, and leave inspired.",        
         img: lightningTalk,
         btnTxt: 'Sign Up',
         link: 'https://forms.gle/Lb3NfQLqhfxbv2oX7 ',
@@ -16,7 +16,7 @@ const EventTypeData = [
     },
     {
         name: "Symposiums",
-        description: "Our symposium panel is a conversation among four experts from various backgrounds around a central topic. The panel is split into two groups, one in favor of the topic premise, the other against it. The panel debates for two 30-40 minute rounds of discussion, with a 15 minute intermission & time for questions during the second round.",
+        description: "Our symposium panel is a conversation among four experts from various backgrounds around a central topic. The panel is split into two groups, one in favor of a premise, the other against it. The panel debates for two 30-40 minute rounds, with a 15 minute intermission & time for questions during the second round.",
         img: symposium,
         btnTxt: 'Sign Up',
         link: 'https://forms.gle/hTqzESszwoJZuodq5',
