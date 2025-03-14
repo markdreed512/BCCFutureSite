@@ -1,5 +1,6 @@
 #home_view{
     padding: 40px;
+    position: relative;
 }
 .intro-section p{
     font-family: var(--primary-font);
@@ -10,6 +11,7 @@
     color: var(--primary-white);
     margin-top: 20px;
     padding-left: 5.5%;
+    width: 80%;
 
 }
 
@@ -24,17 +26,29 @@
 
 .background-img {
     position: absolute;
-    top: 0;
+    top: -2%;
     right: 0;
-    width: 22vw;
-    margin-right: 30px;
-    height: auto;
-    opacity: 0.05;
+    width: 18vw; /* Viewport-relative width */
+    min-width: 200px;
+    max-width: 300px;
+    opacity: 0.06;
     pointer-events: none;
     z-index: -1;
-    background-position-x: 175%;
-    background-position-y: -75%;
+    margin-right: 30px;
+    object-fit: contain; /* Ensures the image maintains its aspect ratio */
+    object-position: top right; /* Positions the image at the top right */
   }
+  
+  @media (max-width: 1160px) {
+    .intro-section h1 {
+        width: 70%;
+       
+    }
+    .intro-section p{   width: 80%; }
+
+    
+}
+
 
   @media (max-width: 770px) {
     .intro-section h1 {
@@ -44,4 +58,41 @@
        
     }
     
+}
+
+
+@media screen and (min-width: 1200px){
+    .background-img {
+     
+        top: -3.5%;
+
+      }
+}
+
+
+@media screen and (min-width: 1450px){
+    .background-img {
+     
+        top: -4.5%;
+
+      }
+}
+
+@media screen and (max-width: 899px){
+    .background-img {
+     
+        
+        margin-right: 0; /* No margin = flush against the right edge */
+        right: 0; /* Ensure it's exactly at the right edge */
+
+      }
+}
+
+
+@media screen and (max-width: 440px){
+    .intro-section h1 {
+     
+        font-weight: 600;
+
+      }
 }

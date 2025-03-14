@@ -64,6 +64,7 @@
     bottom: 15px;
     height: 5%;
     font-size: 15px;
+    font-family: var(--secondary-font);
 }
 
 .sponsor-card__bottom {
