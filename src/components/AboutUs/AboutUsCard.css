@@ -44,6 +44,7 @@
     font-family: var(--secondary-font);
     margin-bottom: 20px;
     line-height: 1.7;
+
   
   }
   
@@ -164,10 +165,11 @@
     }
   
     .about-us__text-content p {
-      font-size: 20px;
+      font-size: 19px;
       font-style: normal;
       font-weight: 400;
       margin-top: 20px;
+      line-height: 1.5;
       
         
     }
