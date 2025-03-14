@@ -17,22 +17,30 @@
   --heading-mobile :40px
 }
 
+
 body {
   margin: 0;
-  /* background-color: var(--primary-purple); */
-  height: 100vh;
-  background:radial-gradient(farthest-side, #4d046b 10%,#1f0834 110%);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover; 
- 
-  background-position: 50% 100%;
 
+  height: 100vh;
   overflow-y: scroll;
 }
 
+.bg-fixed {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background:radial-gradient(farthest-side, #4e046b 10%,#1f0834 110%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 main {
-  max-width: 1262px;
+
   margin: 0 auto;
 }
 p {
@@ -73,5 +81,12 @@ h2 {
 
 .content{
   flex: 1 1 auto;
+}
+
+
+/*As margin for fixed nav-bar*/
+@media screen and (max-width: 500px) {
+  .content {margin-top: 50px !important ;
+  }
 }
 

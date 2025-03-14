@@ -18,7 +18,7 @@ export default function Volunteer() {
           
           <div className="volunteer_bottom">
             <p>If you're passionate about coding and looking to increase your involvement in the
-              tech community, becoming a volunteer at Code Coffee might be for you.
+              tech community, becoming a volunteer at Code & Coffee might be for you.
               <br /> <br /> 
               As a volunteer, you'll have the opportunity to turn your technical skills into leadership skills, and
               contribute to maintaining a vibrant tech ecosystem. Join us today and be a part of

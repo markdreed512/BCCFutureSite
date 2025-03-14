@@ -1,5 +1,5 @@
 import EventsDropdownMenu from "../EventsDropdownMenu/EventsDropdownMenu";
-import logo from "../../assets/bcc-nav.png";
+import logo from "../../assets/bcc-nav.svg";
 import HamburgerMenuIcon from "@mui/icons-material/Menu";
 import EventCalIcon from "../../assets/event_cal_icon.svg";
 import EventTypeIcon from "../../assets/event_type_icon.svg";
@@ -14,7 +14,7 @@ function Navbar() {
   const navigate = useNavigate();
 
   function toggleMenuDisplay() {
-    if (window.innerWidth < 740) {
+    if (window.innerWidth <= 830) {
       setIsMobileMenuOpen(true);
     } else {
       setIsMobileMenuOpen(false);

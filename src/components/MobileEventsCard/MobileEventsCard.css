@@ -1,3 +1,7 @@
+
+
+
+
 .mobile-events-card h3{
     font-size: 24px;
     font-weight: 600;
@@ -27,9 +31,53 @@
 .carousel-section .mobile-carousel{
     margin-bottom: 80px;
 }
-@media (max-width: 386px) {
-    .mobile-events-card .buttons a{
-        font-size: 12px;
-        width: 100px;
+
+@media (max-width: 500px) {
+    .mobile-events-card h3 {
+      font-size: 22px;
+      padding: 15px;
     }
-}
+    
+    .mobile-events-card .buttons {
+      padding: 15px;
+    }
+    
+    .mobile-events-card .buttons a {
+      font-size: 13px;
+      width: 110px;
+    }
+  }
+  
+
+  @media (max-width: 450px) {
+   
+   
+
+    .mobile-events-card h3 {
+      font-size: 20px;
+      padding: 12px;
+    }
+    
+    .mobile-events-card .buttons {
+      padding: 15px;
+     
+    }
+    
+    .mobile-events-card .buttons a {
+      font-size: 12px;
+      height: 30px;
+      width: 85px;
+    }
+  }
+  
+
+  @media (max-width: 386px) {
+    .mobile-events-card h3 {
+      font-size: 18px;
+      padding: 10px;
+    }
+    
+    
+  }
+  
+ 

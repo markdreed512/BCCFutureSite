@@ -1,3 +1,6 @@
+
+
+
 .mobile-sponsor-link .mobile-sponsor-card{
     padding: 64px 31px;
     
@@ -10,15 +13,21 @@
         font-size: 16px;
         font-family: var(--secondary-font);
         line-height: 24px;
+        
     }
 }
 .mobile-sponsor-card__logo{
     height:52px;
-    margin-bottom: 32px;
+    margin-bottom: 15px;
 }
 .mobile-sponsor-card h3, .mobile-sponsor-card p{
     color: white;
 
+}
+
+.mobile-sponsor-card .mobile-sponsor-card__logo{
+    height: 90px;
+  
 }
 
 .mobile-sponsor-card__type {
@@ -28,8 +37,52 @@
     border-radius: 5px;
     width: 18%;
     text-align: center;
+    align-items: center;
     margin-top: 20px;
     position: absolute;
     bottom: 15px;
+    color: white;
+    font-size: 15px;
+    font-family: var(--secondary-font);
     
+}
+
+
+@media screen and (min-width: 609px){
+    
+.mobile-sponsor-card {
+
+    height: 40vw;
+
+   width: 25vw;
+ 
+    
+}
+
+.mobile-sponsor-card p.description{
+    width: 210%;
+    font-size: 20px;
+    margin-bottom: 10px;
+   
+    
+
+}
+
+.mobile-sponsor-card__type{
+    margin-top: 10px;
+    width: 12%;
+
+    
+}
+
+}
+
+@media screen and (max-width: 400px){
+    .mobile-sponsor-card__type{
+        width: 24%;
+    
+        
+    }
+   
+
 }
