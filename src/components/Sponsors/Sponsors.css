@@ -75,6 +75,8 @@
  
 }
 @media screen and (max-width: 1220px){
+
+    
     .sponsors{
         display: flex;
         align-items: center;
@@ -85,7 +87,7 @@
     }
     
 }
-@media screen and (max-width: 708px){
+@media screen and (max-width: 830px){
     .mobile-carousel{
       display: block;
     }
