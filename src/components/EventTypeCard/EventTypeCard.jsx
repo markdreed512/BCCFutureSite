@@ -28,7 +28,7 @@ const EventTypeCard = ({eventType}) => {
         <div 
             className="EventTypeCard"
             id={eventType.tag}
-            //style={{backgroundImage: `url(${backgroundImage})`}}
+            style={{backgroundImage: `url(${backgroundImage})`}}
         >
             <div className="EventTypeCard__container">
                 <div className="EventTypeCard__title-container">
