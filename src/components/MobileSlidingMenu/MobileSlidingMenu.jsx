@@ -31,22 +31,22 @@ function MobileSlidingMenu({ buttonId, menuId, buttonIcon, menuItems }) {
         // Save current scroll position
         const scrollY = window.scrollY;
         // Add styles to prevent background scroll while maintaining position
-        //document.body.style.position = 'fixed';
-        //document.body.style.top = `-${scrollY}px`;
-        //document.body.style.width = '100%';
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${scrollY}px`;
+        document.body.style.width = '100%';
       } else {
         // Restore scroll position when menu closes
-        const scrollY = 0 ;
-        //document.body.style.position = '';
-        //document.body.style.top = '';
-        //document.body.style.width = '';
+        const scrollY = document.body.style.top;
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.width = '';
         window.scrollTo(0, parseInt(scrollY || '0') * -1);
       }
   
       return () => {
-        //document.body.style.position = '';
-        //document.body.style.top = '';
-        //document.body.style.width = '';
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.width = '';
       };
     }, [isOpen]);
 
