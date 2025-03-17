@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'build',
-    base: '/Bmore-CodeAndCoffee.github.io/',
+    base: '/BaltimoreCode-Coffee.github.io/',
     // Other build configuration options...
   },
   
