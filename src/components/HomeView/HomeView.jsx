@@ -2,7 +2,7 @@ import Sponsors from '../Sponsors/Sponsors'
 import Carousel from '../Carousel/Carousel';
 import './HomeView.css'
 import AboutUsCard from '../AboutUs/AboutUsCard';
-import backgroundImg from '../../assets/backgroundImg.png'
+import backgroundImg from '../../assets/backgroundImg.svg'
 
 function HomeView() {
     return ( 
