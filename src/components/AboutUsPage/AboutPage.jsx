@@ -25,14 +25,14 @@ export default function AboutPage() {
       if (memberError) {
         console.error('Error fetching data:', memberError || roleError);
       } else {
-        console.log('Fetched members:', memberData);
-        // console.log('Fetched team roles:', roleData);
+        //console.log('Fetched members:', memberData);
+
         
         setMembers(memberData);
-        // setTeamRoles(roleData);
+
         
-        console.log('Team 1 members:', getMemberInfo(1));
-        console.log('Team 3 members:', getMemberInfo(3));
+        //console.log('Team 1 members:', getMemberInfo(1));
+        //console.log('Team 3 members:', getMemberInfo(3));
 
       }
     };
