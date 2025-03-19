@@ -53,12 +53,12 @@
   }
   
   .volunteer p {
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
     color: var(--primary-white);
     text-align: left;
     font-size: 20px;
     font-style: normal;
-    line-height: 1.5;
+    line-height: 1.6;
  
     margin-top: 20px;
     max-width: 85%;

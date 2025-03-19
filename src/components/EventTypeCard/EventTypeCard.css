@@ -63,9 +63,9 @@
 
 /* Title styling */
 .EventTypeCard__title {
-    font-family: var(--tertiary-font);
+    font-family: var(--secondary-font);
     font-size: 44px;
-    font-weight: 200;
+
     transition: transform 0.8s ease-in-out;
 }
 
@@ -76,9 +76,9 @@
     left: 0;
     width: 68%;
     height: auto;
-    font-family: var(--tertiary-font);
+    font-family: var(--secondary-font);
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.7;
     color: var(--primary-white);
     /* display: flex; */
     /* align-items: center; */
@@ -109,11 +109,12 @@
 
 .EventTypeCard__btn {
     background-color: var(--primary-white);
-
+    font-family: var(--secondary-font);
     border: none;
     border-radius: 20px;
     padding: 10px 30px;
     font-size: 16px;
+    font-weight: 550;
     cursor: pointer;
 
 }

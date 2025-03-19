@@ -38,28 +38,27 @@
   
   .blog p{
     font-size: 20px;
-    font-weight: 500;
+
     margin-bottom: 20px;
     color: white;
     padding-left: 5%;
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
   }
   
   .bottom .blog_section {
     
     font-size: 1.5rem;
-    font-weight: 550;
+
     margin-bottom: 300px;
     margin-top: 50px;
     color: white;
     
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
     line-height: 1;
-
 
   }
   
-  
+
   
   @media screen and (max-width: 770px) {
     .blog-header h1{
