@@ -17,8 +17,9 @@ export default function GetInvolved() {
           
           
           <div className="volunteer_bottom">
-            <p>If you're passionate about coding and looking to increase your involvement in the
-              tech community, becoming a volunteer at Code & Coffee might be for you.
+            <p>We're a completelty volunteer led organization, volunteers plan and run events, curate speaker pipelines and secure venues.
+              If you're passionate about tech and looking to increase your involvement in the
+              community, becoming a volunteer at Code & Coffee might be for you.
               <br /> <br /> 
               As a volunteer, you'll have the opportunity to turn your technical skills into leadership skills, and
               contribute to maintaining a vibrant tech ecosystem. Join us today and be a part of
