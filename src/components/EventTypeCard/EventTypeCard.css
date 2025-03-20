@@ -153,6 +153,12 @@ a:link, a:visited {
     
     
 }
+
+@media (max-width: 1125px) {
+    .EventTypeCard:hover .EventTypeCard__title {
+        transform: translateY(-230px); /* Slide title up halfway */
+    }
+}
 /* Tablet/Mobile Styling */
 @media (max-width: 990px) {
     .EventTypeCard::before {
