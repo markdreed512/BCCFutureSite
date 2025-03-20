@@ -27,7 +27,8 @@
 
 .mobile-sponsor-card .mobile-sponsor-card__logo{
     height: 90px;
-  
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 /*.mobile-sponsor-card__type {

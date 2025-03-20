@@ -179,7 +179,7 @@ footer .dropdown-menu{
 
 
 /* Tablet styling */
-@media (max-width: 1034px) {
+@media (max-width: 1040px) {
   /* Adjust the footer links container */
   .footer-links {
     
@@ -194,6 +194,7 @@ footer .dropdown-menu{
 
     gap: 20px 0px; /* Row gap, column gap */
     padding-left: 10px;
+    margin-top: 60px;
 
   }
   
