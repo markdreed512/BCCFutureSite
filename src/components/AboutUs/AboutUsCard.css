@@ -30,8 +30,7 @@
   .about-us__text-header h1 {
     font-size: 1.8rem;
     white-space: nowrap;
-   
-        font-weight: 600;
+    font-weight: 600;
     color: #222;
     font-family: var(--primary-font);
    
@@ -62,6 +61,7 @@
     background-color: #8e37df;
     color: #fff;
     border: none;
+    
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -81,6 +81,7 @@
   
   .about-us__btn-txt {
     margin: 0;
+    
   }
   
   .about-us__btn-icon {
@@ -167,7 +168,7 @@
     }
   
     .about-us__text-content p {
-      font-size: 19px;
+      font-size: 23px;
       font-style: normal;
       font-weight: 400;
       margin-top: 20px;

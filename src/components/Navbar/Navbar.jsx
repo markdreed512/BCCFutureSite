@@ -51,6 +51,11 @@ function Navbar() {
             </Link>
           </li>
           <li className="navbar__desktop-menu-item">
+            <Link className="navbar__link" to={route_names.get_involved}>
+            Get Involved
+            </Link>
+          </li>
+          <li className="navbar__desktop-menu-item">
             <Link
               className="navbar__link"
               to="https://hcb.hackclub.com/donations/start/baltimore-code-and-coffee"
@@ -59,11 +64,7 @@ function Navbar() {
               Sponsor
             </Link>
           </li>
-          <li className="navbar__desktop-menu-item">
-            <Link className="navbar__link" to={route_names.volunteer}>
-              Volunteer
-            </Link>
-          </li>
+         
         </ul>
       )}
       {isMobileMenuOpen && (
@@ -109,6 +110,13 @@ function Navbar() {
               },
             },
             {
+              name: "Get Involved",
+              id: "mobileVolunteerBtn",
+              handleClick: () => {
+                navigate(route_names.get_involved);
+              },
+            },
+            {
               name: "Sponsor",
               id: "mobileSponsorBtn",
               handleClick: () => {
@@ -117,13 +125,7 @@ function Navbar() {
                 );
               },
             },
-            {
-              name: "Volunteer",
-              id: "mobileVolunteerBtn",
-              handleClick: () => {
-                navigate(route_names.volunteer);
-              },
-            },
+           
           ]}
         ></MobileSlidingMenu>
       )}

@@ -12,10 +12,10 @@
 }
 .sponsors h2{
     font-feature-settings: 'salt' on, 'liga' off;
-    font-family: Raleway;
+    font-family: var(  --primary-font);
     font-size: 36px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.2;
     margin-bottom: 26px;
 }
@@ -47,14 +47,17 @@
     background-color: rgba(184, 184, 184, 0.26);
     line-height: 44px;
     border-radius: 7px;
-    padding: 10px 10px;
+    padding: 12px 14px;
     border: none;
+    
 
 
 
 }
 .sponsor_button .sponsors__partner-link{
         color: white;
+        font-family: var(--secondary-font);
+        font-size: 1rem;
      
 }
 
@@ -98,12 +101,10 @@
         display: flex;
         align-items: center;
     }
-    .sponsors h2,
+    
     .sponsors p{
-        font-size: 20px;
-    }
-    .sponsors p{
-        font-weight: 400;
+   
+        font-size:  var(--descriptions-tablet);
         
     }
 }

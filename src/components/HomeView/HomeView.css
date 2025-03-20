@@ -3,7 +3,7 @@
     position: relative;
 }
 .intro-section p{
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -26,17 +26,23 @@
 
 .background-img {
     position: absolute;
-    top: -2%;
+    top: 0;
     right: 0;
     width: 18vw; /* Viewport-relative width */
     min-width: 200px;
-    max-width: 300px;
-    opacity: 0.06;
+    max-width: 320px;
+    opacity: 0.08;
     pointer-events: none;
     z-index: -1;
     margin-right: 30px;
     object-fit: contain; /* Ensures the image maintains its aspect ratio */
     object-position: top right; /* Positions the image at the top right */
+  }
+
+  @media (min-width: 1600px) {
+    .background-img {
+        max-width: 260px;
+    }
   }
   
   @media (max-width: 1160px) {
@@ -57,26 +63,13 @@
         font-size: var(--heading-mobile);
        
     }
+    .intro-section p {
+        font-size:  var(--descriptions-tablet);
+    }
     
 }
 
 
-@media screen and (min-width: 1200px){
-    .background-img {
-     
-        top: -3.5%;
-
-      }
-}
-
-
-@media screen and (min-width: 1450px){
-    .background-img {
-     
-        top: -4.5%;
-
-      }
-}
 
 @media screen and (max-width: 899px){
     .background-img {
@@ -95,4 +88,11 @@
         font-weight: 600;
 
       }
+    .background-img {
+       
+        opacity: 0.06;       
+  
+    
+  
+    }
 }
