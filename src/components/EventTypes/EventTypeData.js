@@ -34,7 +34,7 @@ const EventTypeData = [
     },
     {
         name: "Workshops",
-        description: "Our workshops are a fun,  hands on, introduction to various topics in CS and adjacent fields. Typically participants just need two prerequisites: A laptop and enthusiasm! We’ve had workshops ranging from the use of GIT in open source and communication skills for developers.",
+        description: "Our workshops are a fun, hands on, introduction to various topics in CS and adjacent fields. Typically participants just need two prerequisites: A laptop and enthusiasm! We’ve had workshops ranging from using GIT in open source to communication skills for developers.",
         img: workshop,
         btnTxt: 'Sign Up',
         link: 'https://forms.gle/PRV7fgARQ3wXxzHDA ',
