@@ -80,7 +80,8 @@
     }
     .mobile-events-card img {
       width: 100%;
-      height: 25vh;
+    
+      display: block;
       transform: translateZ(0);
       -webkit-transform: translateZ(0);
     
