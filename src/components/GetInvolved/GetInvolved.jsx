@@ -17,7 +17,7 @@ export default function GetInvolved() {
           
           
           <div className="volunteer_bottom">
-            <p>We're a completelty volunteer led organization, volunteers plan and run events, curate speaker pipelines and secure venues.
+            <p>We're a completely volunteer led organization, volunteers plan and run events, curate speaker pipelines and secure venues.
               If you're passionate about tech and looking to increase your involvement in the
               community, becoming a volunteer at Code & Coffee might be for you.
               <br /> <br /> 
