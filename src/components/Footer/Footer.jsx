@@ -39,7 +39,7 @@ function Footer() {
               <Link to={route_names.about_us}>About Us</Link>
             </li>
             <li>
-              <Link to={route_names.volunteer}>Volunteer</Link>
+              <Link to={route_names.get_involved}>Get Involved</Link>
             </li> 
             <li>
               <Link to={route_names.blog}>Blog</Link>
@@ -118,6 +118,9 @@ function Footer() {
               <Link to={route_names.blog}>Blog</Link>
             </li>
             <li>
+              <Link to={route_names.get_involved}>Get Involved</Link>
+            </li>
+            <li>
               <a
                 href="https://hcb.hackclub.com/donations/start/baltimore-code-and-coffee"
                 target="_blank"
@@ -126,9 +129,7 @@ function Footer() {
                 Sponsor
               </a>
             </li>
-            <li>
-              <Link to={route_names.volunteer}>Volunteer</Link>
-            </li>
+            
           </ul>
         </div>
       </section>
